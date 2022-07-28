@@ -1,9 +1,17 @@
-import { BrowserRouter, Route, Routes} from 'react-router-dom'
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import SharedLayout from './Routes/SharedLayout';
+import Home from './Routes/Home'
 
 function App() {
   return (
-    <p>hello react</p>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<SharedLayout/>} >
+          <Route index element={<Home/>}/>
+        </Route>
+        
+      </Routes>
+    </BrowserRouter>
   );
 }
 
