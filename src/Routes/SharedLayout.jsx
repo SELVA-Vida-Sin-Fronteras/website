@@ -1,10 +1,13 @@
 import { Outlet } from "react-router-dom";
+import Footer from "../Components/Footer";
+import NavBar from "../Components/NavBar";
+
 const SharedLayout = () => {
   return (
     <>
-      <h1>Navbar</h1>
+      <NavBar />
       <Outlet />
-      <h2>Footer</h2>
+      <Footer />
     </>
   );
 };
