@@ -3,7 +3,7 @@ import logo from "../assets/logo.png";
 
 const NavBar = () => {
   return (
-    <>
+    <div className="navbar">
       <img src={logo} alt="logo" />
       <h1>Friends of SELVA Vida Sin Fronteras</h1>
       <NavLink to="/">Home</NavLink>
@@ -16,7 +16,7 @@ const NavBar = () => {
       {" | "}
       <NavLink to="/TakeAction">Take Action</NavLink>
       {" | "}
-    </>
+    </div>
   );
 };
 

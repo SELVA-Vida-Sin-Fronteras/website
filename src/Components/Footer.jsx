@@ -1,8 +1,6 @@
 import { ReactComponent as Facebook } from "../assets/facebook.svg";
 import { ReactComponent as Email } from "../assets/email.svg";
-import { ReactComponent as Twitter } from "../assets/twitter.svg";
 import { ReactComponent as Instagram } from "../assets/instagram.svg";
-
 import { ReactComponent as LinkedIn } from "../assets/linkedin.svg";
 
 const fill = "black";
