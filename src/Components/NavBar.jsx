@@ -1,9 +1,10 @@
 import { NavLink } from "react-router-dom";
-import { logo } from "../assets/logo.jpg";
+import logo from "../assets/logo.png";
 
 const NavBar = () => {
   return (
     <>
+      <img src={logo} alt="logo" />
       <h1>Friends of SELVA Vida Sin Fronteras</h1>
       <NavLink to="/">Home</NavLink>
       {" | "}
