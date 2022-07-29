@@ -1,5 +1,11 @@
 const Blog = () => {
-    return <h1> Blog Page</h1>;
+    return (
+      <div className="blog">
+        <h2>Subscribe to our blog</h2>
+        <input type="email"></input>
+        <button>Subscribe</button>
+      </div>
+    );
   };
   
   export default Blog;
