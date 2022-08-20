@@ -31,6 +31,13 @@ describe("App", () => {
     it.each`
       path   | pageTestId
       ${"/"} | ${"home-page"}
+      ${"/"} | ${"nav-bar"}
+      ${"/"} | ${"footer"}
+      ${"/WhoWeAre"}   | ${"who-we-are"}
+      ${"/Enrichment"} | ${"enrichment"}
+      ${"/Blog"}       | ${"blog"}
+      ${"/TakeAction"} | ${"take-action"}
+      ${"/NoSuchPage"} | ${"error"}
     `("$pageTestId is accessible", async ({ path, pageTestId }) => {
       setup(path)
       const page = await screen.findByTestId(pageTestId);
