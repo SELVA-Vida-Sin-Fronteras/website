@@ -3,7 +3,7 @@ import logo from "../assets/img/logo.png";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light p-3">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/" data-testid="logo">
           <img src={logo} alt="" className="float-start mx-2" />
@@ -26,39 +26,27 @@ const Navbar = () => {
         >
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/">
+              <Link className="nav-link" aria-current="page" to="/">
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link
-                className="nav-link active"
-                aria-current="page"
-                to="/whoweare"
-              >
+              <Link className="nav-link" aria-current="page" to="/whoweare">
                 Who We Are
               </Link>
             </li>
             <li className="nav-item">
-              <Link
-                className="nav-link active"
-                aria-current="page"
-                to="/enrichment"
-              >
+              <Link className="nav-link" aria-current="page" to="/enrichment">
                 Enrichment Journey
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/blog">
+              <Link className="nav-link" aria-current="page" to="/blog">
                 Blog
               </Link>
             </li>
             <li className="nav-item">
-              <Link
-                className="nav-link active"
-                aria-current="page"
-                to="/takeaction"
-              >
+              <Link className="nav-link btn btn-primary text-light" aria-current="page" to="/takeaction">
                 Take Action
               </Link>
             </li>
