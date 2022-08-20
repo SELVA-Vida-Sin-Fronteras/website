@@ -7,11 +7,9 @@ import Blog from "./pages/Blog";
 import TakeAction from "./pages/TakeAction";
 import Error from "./pages/Error";
 
-
 const App = () => {
   return (
     <BrowserRouter>
-      
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<HomePage />} />

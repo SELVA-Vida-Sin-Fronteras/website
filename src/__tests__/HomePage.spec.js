@@ -1,12 +1,27 @@
+import { render, screen } from "@testing-library/react";
+import { BrowserRouter } from "react-router-dom";
 import HomePage from "../pages/HomePage";
-import { screen, render } from "@testing-library/react";
+
+const setup = () => {
+  render(
+    <BrowserRouter>
+      <HomePage />
+    </BrowserRouter>
+  );
+};
 
 describe("Home Page", () => {
-  describe("Layout", () => {
-    it("has header", () => {
-      render(<HomePage />);
-      const header = screen.queryByRole("heading", { name: "Our Mission" });
-      expect(header).toBeInTheDocument();
+  describe("home page layout", () => {
+    it.each`
+      name                    | testId
+      ${"Mission"}            | ${"mission"}
+      ${"Enrichment Journey"} | ${"enrichment"}
+      ${"Blog"}               | ${"blog"}
+      ${"Take Action"}        | ${"take-action"}
+    `("has a $name card", async ({ testId }) => {
+      setup();
+      const card = await screen.findByTestId(testId);
+      expect(card).toBeInTheDocument();
     });
   });
 });
