@@ -26,8 +26,9 @@ const HomePage = () => {
           </div>
         </section>
       </div>
-
-      <section
+      <div className="container">
+        <div className="row m-5">
+        <section
         className="card p-2 m-auto mt-5 shadow-lg"
         style={{ width: "20rem" }}
         data-testid="home-enrichment"
@@ -76,6 +77,10 @@ const HomePage = () => {
           </Link>
         </div>
       </section>
+        </div>
+      
+      </div>
+      
     </main>
   );
 };
