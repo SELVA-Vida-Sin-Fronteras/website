@@ -31,7 +31,7 @@ const HomePage = () => {
         className="card p-2 m-auto mt-5 shadow-lg w-25"
         data-testid="home-enrichment"
       >
-        <h2 className="card-title text-center">Enrichment Journey</h2>
+        <h2 className="card-title text-center fs-3">Enrichment Journey</h2>
         <div className="card-body">
           <img src={enrichment} className="card-img" alt="" />
         </div>
@@ -49,7 +49,7 @@ const HomePage = () => {
         className="card p-2 m-auto mt-5 shadow-lg w-25"
         data-testid="home-blog"
       >
-        <h2 className="card-title text-center">Blog</h2>
+        <h2 className="card-title text-center fs-3">Blog</h2>
         <div className="card-body">
           <img src={blogImage} className="card-img" alt="" />
         </div>
@@ -63,7 +63,7 @@ const HomePage = () => {
         className="card p-2 m-auto mt-5 shadow-lg w-25"
         data-testid="home-take-action"
       >
-        <h2 className="card-title text-center">Take Action</h2>
+        <h2 className="card-title text-center fs-3">Take Action</h2>
         <div className="card-body">
           <img src={actionImage} className="card-img" alt="" />
         </div>
