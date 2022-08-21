@@ -8,8 +8,7 @@ const HomePage = () => {
     <main data-testid="home-page" className="bg-light p-5">
       <div className="container">
         <section
-          className="card p-2 m-auto mt-5 shadow-lg"
-          style={{ width: "20rem" }}
+          className="card p-2 m-auto mt-5 shadow-lg w-25"
           data-testid="home-mission"
         >
           <h1 className="card-title text-center">Our Mission</h1>
@@ -29,8 +28,7 @@ const HomePage = () => {
       <div className="container">
         <div className="row m-5">
         <section
-        className="card p-2 m-auto mt-5 shadow-lg"
-        style={{ width: "20rem" }}
+        className="card p-2 m-auto mt-5 shadow-lg w-25"
         data-testid="home-enrichment"
       >
         <h2 className="card-title text-center">Enrichment Journey</h2>
@@ -48,8 +46,7 @@ const HomePage = () => {
         </div>
       </section>
       <section
-        className="card p-2 m-auto mt-5 shadow-lg"
-        style={{ width: "20rem" }}
+        className="card p-2 m-auto mt-5 shadow-lg w-25"
         data-testid="home-blog"
       >
         <h2 className="card-title text-center">Blog</h2>
@@ -63,8 +60,7 @@ const HomePage = () => {
         </div>
       </section>
       <section
-        className="card p-2 m-auto mt-5 shadow-lg"
-        style={{ width: "20rem" }}
+        className="card p-2 m-auto mt-5 shadow-lg w-25"
         data-testid="home-take-action"
       >
         <h2 className="card-title text-center">Take Action</h2>
