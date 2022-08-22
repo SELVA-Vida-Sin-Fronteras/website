@@ -1,12 +1,14 @@
 import Tagua from "../assets/img/Tagua.png";
+import river from "../assets/img/blog-img.jpg";
 
 const Blog = () => {
   return (
-    <main data-testid="blog" className="">
+    <main data-testid="blog" className="container">
       <section className="text-center bg-light p-4">
         <h1 className="container display-1">Friends of SELVA Blog</h1>
       </section>
-      <section className="card p-4 p-md-5 mb-4 text-white rounded bg-dark">
+
+      <section className="featured card p-4 p-md-5 mb-4 text-white rounded bg-dark">
         <div className="row g-0">
           <div className="col-md-8">
             <div className="card-body">
@@ -35,6 +37,56 @@ const Blog = () => {
           </div>
         </div>
       </section>
+      <div className="container d-flex">
+        <div className="col-md-8">
+          <div className="row g-1">
+            <section className="blog-posts p-4">
+              <article className="text-dark fs-4">
+                <h2 className="display-6">
+                  November 22, 2021 - Judith Farsone
+                </h2>
+                <h3 className="display-3">Friends of The Amazon Rainforest</h3>
+                <img
+                  className="img-responsive w-100"
+                  src={river}
+                  alt="Rico River at sunset"
+                />
+                <p>Rico River at sunset, Cuyabeno National Park, Ecuador</p>
+                <p>Photo by Cecilia VonHolck</p>
+                <p>
+                  Mission: Friends of Selva Vida Sin Fronteras - USA increases
+                  awareness of the need for cultural and environmental
+                  preservation by providing educational experiences through eco
+                  tours in the Ecuadorian Amazon Rainforest.
+                </p>
+              </article>
+            </section>
+          </div>
+        </div>
+
+        <div className="col-md-4 mx-5">
+          <div className="row">
+            <h2 className="display-2">Archives</h2>
+            <ul className="list-group">
+              <li className="list-group-item fs-3">
+                <a className="archive-link" href="#">November 15, 2021</a>
+              </li>
+              <li className="list-group-item fs-3">
+                <a className="archive-link" href="#">November 2, 2021</a>
+              </li>
+              <li className="list-group-item fs-3">
+                <a className="archive-link" href="#">October 27, 2021</a>
+              </li>
+              <li className="list-group-item fs-3">
+                <a className="archive-link" href="#">October 26, 2021</a>
+              </li>
+              <li className="list-group-item fs-3">
+                <a className="archive-link" href="#">May 5, 2021</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </main>
   );
 };
