@@ -5,11 +5,11 @@ import slide3 from "../assets/img/dining-1.jpg";
 
 const Enrichment = () => {
   return (
-    <main
+    <div
       data-testid="enrichment"
       className="bg-light p-5 justify-content-center"
     >
-      <section className="card m-auto w-50" >
+      <section className="card m-auto" >
         <h1 className="card-title card-header">Enrichment Journeys</h1>
 
         <p className="card-body">
@@ -19,9 +19,8 @@ const Enrichment = () => {
       </section>
       <div
         id="carouselExampleControls"
-        className="carousel slide m-5"
+        className="carousel slide"
         data-bs-ride="carousel"
-        style={{hieght: "100vh"}}
       >
         <div className="carousel-inner">
           <div className="carousel-item active">
@@ -59,7 +58,7 @@ const Enrichment = () => {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-    </main>
+    </div>
   );
 };
 

@@ -1,9 +1,9 @@
 const WhoWeAre = () => {
   return (
-    <main data-testid="who-we-are" className="bg-light p-5">
-      <section className="card m-5">
+    <div data-testid="who-we-are" className="bg-light p-5">
+      <section className="card mb-4">
         <h1 className="card-header fs-1 fw-bold">Who We Are</h1>
-        <p className="card-body fs-4">
+        <p className="card-body">
           We are Friends of SELVA Vida Sin Fronteras-U.S.A., a not-for-profit
           formed on March 1, 2019 in the State of Texas and qualifies as
           tax-exempt under Section 501 (c) (3) of the U.S. Internal Revenue
@@ -16,18 +16,18 @@ const WhoWeAre = () => {
           their supporters in Holland to achieve our goals.
         </p>
       </section>
-      <section className="card m-5">
+      <section className="card mb-4">
         <h2 className="card-header fs-1 fw-bold">Our Mission</h2>
-        <p className="card-body fs-4">
+        <p className="card-body">
           Our Mission is to protect the flora and fauna of the Amazon
           Rainforest, its ancestral indigenous communities, and the Galapagos
           Archipelago and Marine Reserve by increasing awareness for cultural
           and environmental preservation through educational experiences.
         </p>
       </section>
-      <section className="card m-5">
+      <section className="card mb-4">
         <h2 className="card-header fs-1 fw-bold">Our Vision</h2>
-        <p className="card-body fs-4">
+        <p className="card-body">
           Our Vision is to partner with indigenous communities and environmental
           organizations to help preserve the Ecuadorian Amazon Rainforest by
           providing educational expeditions, support related projects and an
@@ -36,7 +36,7 @@ const WhoWeAre = () => {
           Inalienable Right to Exist.”)
         </p>
       </section>
-    </main>
+    </div>
   );
 };
 

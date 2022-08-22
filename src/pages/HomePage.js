@@ -5,10 +5,9 @@ import actionImage from "../assets/img/home-take-action.jpg";
 
 const HomePage = () => {
   return (
-    <main data-testid="home-page" className="bg-light p-5">
-      <div className="container">
+    <div data-testid="home-page" className="bg-light p-5">
         <section
-          className="card p-2 m-auto mt-5 shadow-lg w-25"
+          className="card p-2 m-auto mt-5 shadow-lg "
           data-testid="home-mission"
         >
           <h1 className="card-title text-center">Our Mission</h1>
@@ -24,60 +23,53 @@ const HomePage = () => {
             </Link>
           </div>
         </section>
-      </div>
-      <div className="container">
-        <div className="row m-5">
-        <section
-        className="card p-2 m-auto mt-5 shadow-lg w-25"
-        data-testid="home-enrichment"
-      >
-        <h2 className="card-title text-center fs-3">Enrichment Journey</h2>
-        <div className="card-body">
-          <img src={enrichment} className="card-img" alt="" />
-        </div>
-        <div className="card-footer text-center">
-          <Link
-            className="btn btn-primary"
-            to="/enrichment
-          "
+          <section
+            className="card p-2 m-auto mt-5 shadow-lg "
+            data-testid="home-enrichment"
           >
-            Start your journey
-          </Link>
-        </div>
-      </section>
-      <section
-        className="card p-2 m-auto mt-5 shadow-lg w-25"
-        data-testid="home-blog"
-      >
-        <h2 className="card-title text-center fs-3">Blog</h2>
-        <div className="card-body">
-          <img src={blogImage} className="card-img" alt="" />
-        </div>
-        <div className="card-footer text-center">
-          <Link className="btn btn-primary" to="/blog">
-            Read our blog
-          </Link>
-        </div>
-      </section>
-      <section
-        className="card p-2 m-auto mt-5 shadow-lg w-25"
-        data-testid="home-take-action"
-      >
-        <h2 className="card-title text-center fs-3">Take Action</h2>
-        <div className="card-body">
-          <img src={actionImage} className="card-img" alt="" />
-        </div>
-        <div className="card-footer text-center">
-          <Link className="btn btn-primary" to="/takeaction">
-            How you can help
-          </Link>
-        </div>
-      </section>
-        </div>
-      
-      </div>
-      
-    </main>
+            <h2 className="card-title text-center fs-3">Enrichment Journey</h2>
+            <div className="card-body">
+              <img src={enrichment} className="card-img" alt="" />
+            </div>
+            <div className="card-footer text-center">
+              <Link
+                className="btn btn-primary"
+                to="/enrichment
+          "
+              >
+                Start your journey
+              </Link>
+            </div>
+          </section>
+          <section
+            className="card p-2 m-auto mt-5 shadow-lg "
+            data-testid="home-blog"
+          >
+            <h2 className="card-title text-center fs-3">Blog</h2>
+            <div className="card-body">
+              <img src={blogImage} className="card-img" alt="" />
+            </div>
+            <div className="card-footer text-center">
+              <Link className="btn btn-primary" to="/blog">
+                Read our blog
+              </Link>
+            </div>
+          </section>
+          <section
+            className="card p-2 m-auto mt-5 shadow-lg "
+            data-testid="home-take-action"
+          >
+            <h2 className="card-title text-center fs-3">Take Action</h2>
+            <div className="card-body">
+              <img src={actionImage} className="card-img" alt="" />
+            </div>
+            <div className="card-footer text-center">
+              <Link className="btn btn-primary" to="/takeaction">
+                How you can help
+              </Link>
+            </div>
+          </section>
+    </div>
   );
 };
 

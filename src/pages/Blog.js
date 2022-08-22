@@ -3,8 +3,8 @@ import river from "../assets/img/blog-img.jpg";
 
 const Blog = () => {
   return (
-    <main data-testid="blog" className="container">
-      <section className="text-center bg-light p-4">
+    <div data-testid="blog" className="container">
+      <section className="text-center bg-light">
         <h1 className="container display-1">Friends of SELVA Blog</h1>
       </section>
 
@@ -31,15 +31,13 @@ const Blog = () => {
           </div>
           <div className="col-md-2">
             <img
+            className="img-fluid"
               src={Tagua}
               alt="Sculpture wood and woven fabric resembling seed pods hanging from a branch"
             />
           </div>
         </div>
       </section>
-      <div className="container d-flex">
-        <div className="col-md-8">
-          <div className="row g-1">
             <section className="blog-posts p-4">
               <article className="text-dark fs-4">
                 <h2 className="display-6">
@@ -61,11 +59,7 @@ const Blog = () => {
                 </p>
               </article>
             </section>
-          </div>
-        </div>
 
-        <div className="col-md-4 mx-5">
-          <div className="row">
             <h2 className="display-2">Archives</h2>
             <ul className="list-group">
               <li className="list-group-item fs-3">
@@ -84,10 +78,7 @@ const Blog = () => {
                 <a className="archive-link" href="#">May 5, 2021</a>
               </li>
             </ul>
-          </div>
-        </div>
-      </div>
-    </main>
+    </div>
   );
 };
 
