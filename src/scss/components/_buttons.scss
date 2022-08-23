@@ -1,0 +1,19 @@
+.btn {
+    border: none;
+    outline: none;
+    font-weight: 700;
+    text-transform: uppercase;
+
+
+    &-secondary {
+        background-color: $secondary-btn-bg-color;
+        color: $secondary-btn-txt-clr;
+    }
+
+    &-primary {
+    background-color: $primary-btn-bg-clr;
+    }
+    &-lg {
+        width: 100%;
+    }
+}

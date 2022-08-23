@@ -5,12 +5,12 @@ import actionImage from "../assets/img/home-take-action.jpg";
 
 const HomePage = () => {
   return (
-    <div data-testid="home-page" className="bg-light p-5">
-      <div className="container">
+    <div data-testid="home-page" className="home-page">
+      <div className="home-page__img-container d-flex">
         <section
-          className="card p-2 m-auto mt-5 shadow-lg "
+          className="card card__hero text-light p-2 m-auto shadow-lg "
           data-testid="home-mission"
-          style={{maxWidth: "40rem"}}
+          style={{ maxWidth: "40rem" }}
         >
           <h1 className="card-title text-center">Our Mission</h1>
           <p className="card-body">
@@ -20,69 +20,70 @@ const HomePage = () => {
             and environmental preservation through educational experiences.
           </p>
           <div className="card-footer text-center">
-            <Link className="btn btn-primary" to="/takeaction">
+            <Link className="btn btn-secondary btn-lg" to="/takeaction">
               How to help
             </Link>
           </div>
         </section>
       </div>
-
-      <div className="container">
-        <div className="row">
-          <div className="col-lg">
-            <section
-              className="card p-2 m-auto mt-5 shadow-lg "
-              data-testid="home-enrichment"
-            >
-              <h2 className="card-title text-center fs-3">
-                Enrichment Journey
-              </h2>
-              <div className="card-body">
-                <img src={enrichment} className="card-img" alt="" />
-              </div>
-              <div className="card-footer text-center">
-                <Link
-                  className="btn btn-primary"
-                  to="/enrichment
+      <div className="bg-light p-5">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg">
+              <section
+                className="card p-2 m-auto mt-5 shadow-lg "
+                data-testid="home-enrichment"
+              >
+                <h2 className="card-title text-center fs-3">
+                  Enrichment Journey
+                </h2>
+                <div className="card-body">
+                  <img src={enrichment} className="card-img" alt="" />
+                </div>
+                <div className="card-footer text-center">
+                  <Link
+                    className="btn btn-primary btn-lg"
+                    to="/enrichment
           "
-                >
-                  Start your journey
-                </Link>
-              </div>
-            </section>
-          </div>
-          <div className="col-lg">
-            <section
-              className="card p-2 m-auto mt-5 shadow-lg "
-              data-testid="home-blog"
-            >
-              <h2 className="card-title text-center fs-3">Blog</h2>
-              <div className="card-body">
-                <img src={blogImage} className="card-img" alt="" />
-              </div>
-              <div className="card-footer text-center">
-                <Link className="btn btn-primary" to="/blog">
-                  Read our blog
-                </Link>
-              </div>
-            </section>
-          </div>
+                  >
+                    Start your journey
+                  </Link>
+                </div>
+              </section>
+            </div>
+            <div className="col-lg">
+              <section
+                className="card p-2 m-auto mt-5 shadow-lg "
+                data-testid="home-blog"
+              >
+                <h2 className="card-title text-center fs-3">Blog</h2>
+                <div className="card-body">
+                  <img src={blogImage} className="card-img" alt="" />
+                </div>
+                <div className="card-footer text-center">
+                  <Link className="btn btn-primary btn-lg" to="/blog">
+                    Read our blog
+                  </Link>
+                </div>
+              </section>
+            </div>
 
-          <div className="col-lg">
-            <section
-              className="card p-2 m-auto mt-5 shadow-lg "
-              data-testid="home-take-action"
-            >
-              <h2 className="card-title text-center fs-3">Take Action</h2>
-              <div className="card-body">
-                <img src={actionImage} className="card-img" alt="" />
-              </div>
-              <div className="card-footer text-center">
-                <Link className="btn btn-primary" to="/takeaction">
-                  How you can help
-                </Link>
-              </div>
-            </section>
+            <div className="col-lg">
+              <section
+                className="card p-2 m-auto mt-5 shadow-lg "
+                data-testid="home-take-action"
+              >
+                <h2 className="card-title text-center fs-3">Take Action</h2>
+                <div className="card-body">
+                  <img src={actionImage} className="card-img" alt="" />
+                </div>
+                <div className="card-footer text-center">
+                  <Link className="btn btn-primary btn-lg" to="/takeaction">
+                    How you can help
+                  </Link>
+                </div>
+              </section>
+            </div>
           </div>
         </div>
       </div>
