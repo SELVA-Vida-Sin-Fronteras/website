@@ -11158,4 +11158,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .home-page .card__hero {
   background-color: rgba(84, 129, 54, 0.84);
 }
+
+.navbar-top {
+  background-color: rgba(43, 43, 43, 0.8);
+}
 /*# sourceMappingURL=main.css.map */

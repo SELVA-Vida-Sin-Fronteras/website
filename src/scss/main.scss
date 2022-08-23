@@ -1,12 +1,12 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
-
 @import "./abstracts/variables";
-
 @import "./base/typography";
-
 @import "./components/buttons";
-
 @import "./pages/homepage";
 
+$desaturated-gray: hsla(0, 0%, 17%, 0.8);
 
-
+$top-navbar-bg-color: $desaturated-gray;
+.navbar-top {
+    background-color: $top-navbar-bg-color;
+}
