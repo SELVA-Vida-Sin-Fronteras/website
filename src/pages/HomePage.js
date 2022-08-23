@@ -6,7 +6,7 @@ import actionImage from "../assets/img/home-take-action.jpg";
 const HomePage = () => {
   return (
     <div data-testid="home-page" className="bg-light p-5">
-      <div className="container">
+      <div className="container home-page__img-container">
         <section
           className="card p-2 m-auto mt-5 shadow-lg "
           data-testid="home-mission"
