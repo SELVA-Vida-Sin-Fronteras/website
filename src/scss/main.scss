@@ -3,13 +3,9 @@
 @import "./base/typography";
 @import "./components/buttons";
 @import "./components/Navbar";
+@import "components/footer";
 @import "./pages/homepage";
 
 
 
-.footer {
-    background-color: $footer-bg-clr;
-    a {
-        color: $primary-txt-clr;
-    }
-}
+

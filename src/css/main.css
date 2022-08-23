@@ -11154,6 +11154,14 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   background-color: rgba(43, 43, 43, 0.95);
 }
 
+.footer {
+  background-color: #15753b;
+}
+
+.footer a {
+  color: white;
+}
+
 .home-page__img-container {
   background-image: url("../assets/img/home-page-bg-lg.jpg");
   height: 50vh;
@@ -11161,13 +11169,5 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 .home-page .card__hero {
   background-color: rgba(84, 129, 54, 0.84);
-}
-
-.footer {
-  background-color: #15753b;
-}
-
-.footer a {
-  color: white;
 }
 /*# sourceMappingURL=main.css.map */
