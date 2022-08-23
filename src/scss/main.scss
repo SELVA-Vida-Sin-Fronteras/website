@@ -2,11 +2,14 @@
 @import "./abstracts/variables";
 @import "./base/typography";
 @import "./components/buttons";
+@import "./components/Navbar";
 @import "./pages/homepage";
 
-$desaturated-gray: hsla(0, 0%, 17%, 0.8);
 
-$top-navbar-bg-color: $desaturated-gray;
-.navbar-top {
-    background-color: $top-navbar-bg-color;
+
+.footer {
+    background-color: $footer-bg-clr;
+    a {
+        color: $primary-txt-clr;
+    }
 }

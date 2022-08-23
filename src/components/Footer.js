@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="card bg-secondary p-5" data-testid="footer">
+    <footer className="footer card p-5" data-testid="footer">
       <nav className="navbar navbar-expand justify-content-center">
         <ul className="navbar-nav ">
           <li className="nav-item">
