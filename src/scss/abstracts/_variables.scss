@@ -2,12 +2,12 @@
 $green: hsla(96, 41%, 36%, 1);
 $desaturated-green: hsla(96, 41%, 36%, 0.84);
 $dark-green: hsla(144, 70%, 27%, 1);
-$desaturated-gray: hsla(0, 0%, 17%, 0.95);
-
-
+$gray: hsla(0, 0%, 17%, 0.95);
+$desaturated-gray: hsla(0, 0%, 17%, 0.8);
 // Background Colors
+$primary-bg-clr: $desaturated-gray;
 $footer-bg-clr: $dark-green;
-$top-navbar-bg-color: $desaturated-gray;
+$top-navbar-bg-color: $gray;
 $secondary-btn-bg-color: white;
 $hero-card-bg-color: $desaturated-green;
 $primary-btn-bg-clr: $green;

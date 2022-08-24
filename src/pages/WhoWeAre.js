@@ -1,8 +1,10 @@
 const WhoWeAre = () => {
   return (
-    <div data-testid="who-we-are" className="bg-light p-5">
-      <div className="container m-auto" style={{ maxWidth: "50rem" }}>
-        <section className="card mb-4">
+    <div data-testid="who-we-are" className="who-we-are">
+      <div className="img-container img-container-hero img-container-hero--who-we-are mb-5"></div>
+
+      <div className="container m-auto p-5" style={{ maxWidth: "50rem" }}>
+        <section className="card mb-4 shadow-lg">
           <h1 className="card-header fs-1 fw-bold">Who We Are</h1>
           <p className="card-body">
             We are Friends of SELVA Vida Sin Fronteras-U.S.A., a not-for-profit
@@ -17,7 +19,7 @@ const WhoWeAre = () => {
             and their supporters in Holland to achieve our goals.
           </p>
         </section>
-        <section className="card mb-4">
+        <section className="card mb-4 shadow-lg">
           <h2 className="card-header fs-1 fw-bold">Our Mission</h2>
           <p className="card-body">
             Our Mission is to protect the flora and fauna of the Amazon
@@ -26,7 +28,7 @@ const WhoWeAre = () => {
             and environmental preservation through educational experiences.
           </p>
         </section>
-        <section className="card mb-4">
+        <section className="card mb-4 shadow-lg">
           <h2 className="card-header fs-1 fw-bold">Our Vision</h2>
           <p className="card-body">
             Our Vision is to partner with indigenous communities and
