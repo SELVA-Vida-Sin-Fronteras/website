@@ -6,7 +6,7 @@ import actionImage from "../assets/img/home-take-action.jpg";
 const HomePage = () => {
   return (
     <div data-testid="home-page" className="home-page">
-      <div className="home-page__img-container d-flex">
+      <div className="img-container-hero img-container-hero--home d-flex">
         <section
           className="card card__hero text-light p-2 m-auto shadow-lg "
           data-testid="home-mission"

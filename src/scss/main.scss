@@ -5,7 +5,16 @@
 @import "./components/Navbar";
 @import "components/footer";
 @import "./pages/homepage";
+@import "./pages/who-we-are";
 
-
-
-
+.img-container-hero {
+    height: 50vh;
+    
+    &--home {
+      background-image: url("../assets/img/home-page-bg-lg.jpg");
+    }
+    &--who-we-are {
+      background-image: url("../assets/img/who-we-are-lg.jpg");
+    }
+  }
+  
