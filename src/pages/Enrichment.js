@@ -4,14 +4,17 @@ const Enrichment = () => {
   return (
     <div
       data-testid="enrichment"
-      className="bg-light p-5 justify-content-center"
+      className=" justify-content-center page enrichment"
     >
-      <div className="container">
-        <section className="card m-auto" style={{ maxWidth: "40rem" }}>
+      <div className="img-container-hero img-container-hero--journey">
+        <section className="card card__hero m-auto">
           <h1 className="card-title card-header">Ecuador Enrichment Journey</h1>
 
           <p className="card-body">May 5-19, 2023</p>
         </section>
+      </div>
+
+      <div className="container p-5">
         <div
           id="carouselExampleControls"
           className="carousel slide my-4"

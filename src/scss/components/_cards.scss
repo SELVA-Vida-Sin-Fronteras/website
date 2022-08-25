@@ -1,0 +1,9 @@
+.card {
+  background-color: $primary-bg-clr;
+  color: $primary-txt-clr;
+
+  &__hero {
+    background-color: $hero-card-bg-color;
+    max-width: 40rem;
+  }
+}

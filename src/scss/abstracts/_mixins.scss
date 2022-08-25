@@ -1,0 +1,35 @@
+
+@mixin media-sm {
+    @media screen and (min-width: 576px) {
+      // Consistent with bootstrap break points
+      @content;
+    }
+  }
+  
+  @mixin media-md {
+    @media screen and (min-width: 768px) {
+      // Consistent with bootstrap break points
+      @content;
+    }
+  }
+  
+  @mixin media-lg {
+    @media screen and (min-width: 992px) {
+      // Consistent with bootstrap break points
+      @content;
+    }
+  }
+  
+  @mixin media-xl {
+    @media screen and (min-width: 1200px) {
+      // Consistent with bootstrap break points
+      @content;
+    }
+  }
+  
+  @mixin media-xx {
+    @media screen and (min-width: 1400px) {
+      // Consistent with bootstrap break points
+      @content;
+    }
+  }
