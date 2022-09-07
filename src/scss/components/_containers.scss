@@ -1,0 +1,32 @@
+.img-container-hero {
+  display: flex;
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include media-xx{
+    max-width: 1400px;
+    margin: auto;
+  }
+
+  &--home {
+    background-image: url("../assets/img/home-page-bg.jpg");
+    @include media-sm {
+      background-image: url("../assets/img/home-page-bg-sm.jpg");
+    }
+    @include media-md {
+      background-image: url("../assets/img/home-page-bg-lg.jpg");
+    }
+  }
+  &--who-we-are {
+    background-image: url("../assets/img/who-we-are.jpg");
+
+    @include media-sm {
+      background-image: url("../assets/img/who-we-are-lg.jpg");
+    }
+  }
+
+  &--journey {
+    background-image: url("../assets/img/journey.jpg");
+  }
+}

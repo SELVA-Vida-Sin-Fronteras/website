@@ -4,15 +4,44 @@ const Enrichment = () => {
   return (
     <div
       data-testid="enrichment"
-      className="bg-light p-5 justify-content-center"
+      className=" justify-content-center page enrichment"
     >
-      <div className="container">
-        <section className="card m-auto" style={{ maxWidth: "40rem" }}>
+      <div className="img-container-hero img-container-hero--journey">
+        <section className="card card__hero m-auto">
           <h1 className="card-title card-header">Ecuador Enrichment Journey</h1>
 
           <p className="card-body">May 5-19, 2023</p>
         </section>
-        <div
+      </div>
+
+      <div className="container p-5">
+        
+        <section className="journey-2023">
+          <section className="info">
+            <h2>Ecuador Enrichment Journey</h2>
+            <h3>May 5-19, 2023</h3>
+            <p>
+              Join an exciting adventure to Ecuador, the Amazon Rainforest, and
+              the Galapagos Islands. Experience the riches of the forest, local
+              artisans at work, and ancient history of the area. Options include
+              the full experience of a 14-day trip, shorter 10-day or 5-day
+              trip. Excellent guides and competitive prices.
+            </p>
+            <p>
+              Our Mission is to protect the flora and fauna of the Amazon
+              Rainforest, its ancestral indigenous communities, and the
+              Galapagos Archipelago and Marine Reserve by increasing awareness
+              for cultural and environmental preservation through educational
+              experiences.
+            </p>
+
+            <p>
+              A portion of all fees goes to support our mission and specifically
+              the Amazon Reserve for Peace For detailed
+            </p>
+          </section>
+
+          <div
           id="carouselExampleControls"
           className="carousel slide my-4"
           data-bs-ride="carousel"
@@ -56,33 +85,9 @@ const Enrichment = () => {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
-        <section className="journey-2023">
-          <section className="info">
-            <h2>Ecuador Enrichment Journey</h2>
-            <h3>May 5-19, 2023</h3>
-            <p>
-              Join an exciting adventure to Ecuador, the Amazon Rainforest, and
-              the Galapagos Islands. Experience the riches of the forest, local
-              artisans at work, and ancient history of the area. Options include
-              the full experience of a 14-day trip, shorter 10-day or 5-day
-              trip. Excellent guides and competitive prices.
-            </p>
-            <p>
-              Our Mission is to protect the flora and fauna of the Amazon
-              Rainforest, its ancestral indigenous communities, and the
-              Galapagos Archipelago and Marine Reserve by increasing awareness
-              for cultural and environmental preservation through educational
-              experiences.
-            </p>
-
-            <p>
-              A portion of all fees goes to support our mission and specifically
-              the Amazon Reserve for Peace For detailed
-            </p>
-          </section>
           <section className="schedule">
             <h2>Schedule</h2>
-            <ol className="list-group">
+            <ol>
               <li className="list-group-item">
                 Day 1: Arrive in Quito-transfer to Hotel Wyndham
               </li>

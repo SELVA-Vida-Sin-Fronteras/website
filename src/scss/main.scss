@@ -1,20 +1,12 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "./abstracts/variables";
+@import "./abstracts/mixins";
 @import "./base/typography";
 @import "./components/buttons";
 @import "./components/Navbar";
 @import "components/footer";
-@import "./pages/homepage";
-@import "./pages/who-we-are";
+@import "components/cards";
+@import "components/containers";
+@import "layouts/global";
 
-.img-container-hero {
-    height: 50vh;
-    
-    &--home {
-      background-image: url("../assets/img/home-page-bg-lg.jpg");
-    }
-    &--who-we-are {
-      background-image: url("../assets/img/who-we-are-lg.jpg");
-    }
-  }
-  
+

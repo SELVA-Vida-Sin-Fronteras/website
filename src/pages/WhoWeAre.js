@@ -1,6 +1,6 @@
 const WhoWeAre = () => {
   return (
-    <div data-testid="who-we-are" className="who-we-are">
+    <div data-testid="who-we-are" className="page who-we-are">
       <div className="img-container img-container-hero img-container-hero--who-we-are mb-5"></div>
 
       <div className="container m-auto p-5" style={{ maxWidth: "50rem" }}>

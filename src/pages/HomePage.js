@@ -5,7 +5,7 @@ import actionImage from "../assets/img/home-take-action.jpg";
 
 const HomePage = () => {
   return (
-    <div data-testid="home-page" className="home-page">
+    <div data-testid="home-page" className="home-page page">
       <div className="img-container-hero img-container-hero--home d-flex">
         <section
           className="card card__hero text-light p-2 m-auto shadow-lg "
@@ -26,7 +26,7 @@ const HomePage = () => {
           </div>
         </section>
       </div>
-      <div className="bg-light p-5">
+      <div className="p-5">
         <div className="container">
           <div className="row">
             <div className="col-lg">
