@@ -15,7 +15,6 @@ const Enrichment = () => {
       </div>
 
       <div className="container p-5">
-        
         <section className="journey-2023">
           <section className="info">
             <h2>Ecuador Enrichment Journey</h2>
@@ -42,49 +41,49 @@ const Enrichment = () => {
           </section>
 
           <div
-          id="carouselExampleControls"
-          className="carousel slide my-4"
-          data-bs-ride="carousel"
-          aria-hidden="true"
-        >
-          <div className="carousel-inner">
-            {slides.map((slide, i) => (
-              <div
-                key={i}
-                className={i === 0 ? "carousel-item active" : "carousel-item"}
-                data-interval="10000"
-                // style={{ height: "20vh" }}
-              >
-                <img src={slide.path} className="d-block w-100" alt="" />
-              </div>
-            ))}
-          </div>
+            id="carouselExampleControls"
+            className="carousel slide my-4"
+            data-bs-ride="carousel"
+            aria-hidden="true"
+          >
+            <div className="carousel-inner">
+              {slides.map((slide, i) => (
+                <div
+                  key={i}
+                  className={i === 0 ? "carousel-item active" : "carousel-item"}
+                  data-interval="10000"
+                  // style={{ height: "20vh" }}
+                >
+                  <img src={slide.path} className="d-block w-100" alt="" />
+                </div>
+              ))}
+            </div>
 
-          <button
-            className="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev"
-          >
-            <span
-              className="carousel-control-prev-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button
-            className="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="next"
-          >
-            <span
-              className="carousel-control-next-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Next</span>
-          </button>
-        </div>
+            <button
+              className="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                className="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span className="visually-hidden">Previous</span>
+            </button>
+            <button
+              className="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span
+                className="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span className="visually-hidden">Next</span>
+            </button>
+          </div>
           <section className="schedule">
             <h2>Schedule</h2>
             <ol>
@@ -148,92 +147,223 @@ const Enrichment = () => {
           </section>
 
           <section className="pricing">
-            <h2>May 2023 Enrichment Journey Pricing</h2>
-            <h3>Quito-Cuenca-Rainforest</h3>
+            <h2>May 2023 Enrichment Journey</h2>
+            <section>
+              <h3>
+                Quito-Cuenca-Rainforest with Galapagos Island extension journey
+                option.
+              </h3>
+              <p>15 day, 10 day, 5 day options</p>
+              <p>Per Person: 10 days Arriving May 5th Departing May 14th</p>
+              <p>Includes: All Hotel Accommodations including all breakfasts</p>
 
-            <p>
-              Per Person: 10 days Arriving May 5th Departing May 14th $ 3243.00
-              per person
-            </p>
+              <ul>
+                <li>
+                  May 5th Day 1, arrive by 9:00 pm to Quito
+                  <ul>
+                    <li>One night at Airport Holiday Inn B-included</li>
+                  </ul>
+                </li>
+                <li>
+                  May 6th Day 2 Breakfast and tour bus to Riobamba
+                  <ul>
+                    <li>One night La Andaluza Hacienda B-included</li>
+                    <li>Hike at the Quilotoa Crater Lake</li>
+                    <li>
+                      Cost of lunch and dinner on our own, places to eat at La
+                      Andaluza.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  May 7 Day 3 Breakfast, tour bus to Cuenca
+                  <ul>
+                    <li>Stop at Ingapirca Inca Ruins for a guided tour</li>
+                    <li>Lunch on our own, options provided.</li>
+                    <li>Arrive at Cuenca first night at the Boutique</li>
+                    <li>Hotel Santa Lucia B-included</li>
+                    <li>Dinner on our own, options provided</li>
+                  </ul>
+                </li>
+                <li>
+                  May 8th Day 4 Breakfast, tour bus to:
+                  <ul>
+                    <li>The Panama Hat Factory</li>
+                    <li>
+                      Bus to the town of Gualaceo and La Casa de la Makata. The
+                      Jiménez family live and work there, keeping ancient
+                      weaving and dying methods alive. Workshop with lunch
+                      included: IKAT Weaving in Ecuador, A Colorful Cultural
+                      UNESCO Treasure
+                    </li>
+                    <li>Dinner on our own, options provided</li>
+                    <li>2nd night at Boutique Hotel Santa Lucia.</li>
+                  </ul>
+                </li>
+                <li>
+                  May 9th Day 5 Breakfast, fly back to Quito
+                  <ul>
+                    <li>Bus to Quito for a brief city tour</li>
+                    <li>
+                      Check in to Hotel Mercure Alamende for 1 night includes
+                      breakfast.
+                    </li>
+                    <li>
+                      Tour of an archeological museum Mindalae with lunch
+                      included.
+                    </li>
+                    <li>
+                      Dinner at restaurant El Ventanal with amazing views of the
+                    </li>
+                    <li>Capital of Ecuador. Dinner not included.</li>
+                  </ul>
+                </li>
+                <li>
+                  May 10th Day 6 Breakfast return to the Quito Airport (Day 1 in
+                  the Rainforest)
+                  <ul>
+                    <li>Return by van to the airport/meet others coming</li>
+                    <li>for only the Rainforest Journey.</li>
+                    <li>
+                      Fly to the village of Coca Transfer by van to the Amazon
+                      Dolphin Reserve
+                    </li>
+                    <li>Lunch stop (not included)</li>
+                    <li>Dinner at the reserve</li>
+                    <li>Night hike</li>
+                  </ul>
+                </li>
+                <li>
+                  May 11th, Day 7 (Day 2 in the Rainforest)
+                  <ul>
+                    <li> Breakfast </li>
+                    <li>Early morning canoe ride to enjoy the beauty of</li>
+                    <li>
+                      Pancocha Lake and walk on a trail to learn about medicinal
+                      plants and with some luck wildlife. (Pink Dolphins)
+                    </li>
+                    <li>Lunch in the Rainforest</li>
+                    <li>
+                      In the afternoon learn about Piranha (catch & release) and
+                      other wildlife in the river area.
+                    </li>
+                    <li>Dinner at the lodge</li>
+                  </ul>
+                </li>
+                <li>
+                  May 12th Day 8 (Day 3 in the Rainforest)
+                  <ul>
+                    <li>Breakfast</li>
+                    <li>
+                      This day is a cultural day we will visit the Kichwa
+                      community to see their local crafts.{" "}
+                    </li>
+                    <li>
+                      We will have a stop at a clay licking wall on Napo river
+                      side to spot hopefully parrots and parakeets
+                    </li>
+                    <li>Lunch with Kichwa families.</li>
+                    <li>Afternoon we keep going on Napo river towards</li>
+                    <li>
+                      Yarina Lodge reserve for our 4th night in the Rainforest
+                    </li>
+                    <li>Dinner</li>
+                    <li>Optional night activity.</li>
+                  </ul>
+                </li>
+                <li>
+                  May 13th Day 9 (Day 4 in the Rainforest) 4th night at the
+                  Yarino Lodge
+                  <ul>
+                    <li>Dinner</li>
+                    <li>Optional night activity</li>
+                  </ul>
+                </li>
 
-            <p>Includes:</p>
+                <li>
+                  May 14th Day 10 (Day 5 in the Rainforest, return to Quito and
+                  flights home.
+                  <ul>
+                    <li>
+                      After breakfast take the canoe and go back to Coca for a
+                      morning flight back to Quito
+                    </li>
+                    <li>
+                      People returning to their home states or countries will
+                      fly that day.
+                    </li>
+                    <li>
+                      People flying the next morning to the Galapagos Islands
+                      will stay one night At the Airport Holiday Inn, Breakfast
+                      included (There are only 2 flights to the Galapagos
+                      Islands on Sunday, and we will not return in time from the
+                      Rainforest.)
+                    </li>
+                  </ul>
+                </li>
 
-            <ul>
-              <li>All Hotel Accommodations including all breakfasts</li>
-              <li>In Quito, Riobamba and Cuenca</li>
-              <li>Tour Bus to Cuenca</li>
-              <li>3 hour weaving workshop including lunch</li>
-              <li>Airfare back to Quito</li>
-              <li>Entrance fee to Ingapirca Inca Archeological Site</li>
-              <li>Roundtrip Airfare from Quito to Coca</li>
-            </ul>
+                <li>
+                  Included in the Rainforest Journey:
+                  <ul>
+                    <li>Roundtrip airfare to Coca</li>
+                    <li>All meals B-L-D</li>
+                    <li>All Excursions/Rubber boots for hiking</li>
+                    <li>All water and land transportation,</li>
+                    <li>Bi-Lingual Tour Guide.</li>
+                  </ul>
+                  Not included, Airfare to Ecuador from other countries, lunches
+                  except for the one provided during the workshop and the museum
+                  lunch in Quito, Dinners, extra non-alcohol and alcohol
+                  beverages, tips and gratuities to the bus driver and tour
+                  guide. $3425.00 for the 10 day journey
+                </li>
+              </ul>
+            </section>
 
-            <p> Includes the Amazon Rainforest:</p>
+            <section>
+              <h3>Galapagos Extension</h3>
+              <p>
+                Galapagos Islands Extension Journey: May 14th Return May 18th
+              </p>
+              <p>$1843.00 for 4 days and 4 nights, 3 nights on the Galapagos</p>
+              <p>Includes: </p>
+              <ul>
+                <li>1 night Holiday Inn Airport Quito w/breakfast</li>
+                <li>Roundtrip Airfare from Quito to Galapagos Islands</li>
+                <li>3 Nights Hotel Accommodations</li>
+                <li>All Land and Water Transportation</li>
+                <li>All Breakfasts</li>
+                <li>
+                  All Excursions/Snorkeling Equipment (Travelers are welcome to
+                  bring their own.)
+                </li>
+                <li>Bi-Lingual Naturalist Guide</li>
+              </ul>
+              <p>Total Price with the Galapagos extension: $5268.00</p>
+              Not Included is the U.S dollars $20.00 transit fee or the $100
+              Galapagos entry fee to be paid in cash before entering.
+            </section>
+            <section>
+              <h3>RAINFOREST JOURNEY ONLY</h3>
 
-            <ul>
-              <li>4 Nights 5 Days</li>
-              <li>Land Transportation in Coca to the Dolphin Lodge</li>
-              <li>3 nights at the Amazon Dolphin Lodge</li>
-              <li>1 night at the Yarino Eco Lodge</li>
-              <li>All meals B-L-D</li>
-              <li>All Excursions/Rubber boots for hiking</li>
-              <li>All water and land transportation</li>
-              <li>Bi-Lingual Tour Guide</li>
-            </ul>
+              <p>$1765.00 per person 4 nights 5 days Includes:</p>
 
-            <p>
-              Not included, Airfare to Ecuador, Lunches except for the one
-              provided during the workshop and Dinners, non-alcohol and alcohol
-              beverages, tips and gratuities to the bus driver and tour guide.
-            </p>
-
-            <h3>Galapagos Islands Extension Journey: 3 Nights 4 Days </h3>
-            <p>
-              $1780.00 Per Person from Monday May 15th returning Thursday May
-              18th, to catch international flights.
-            </p>
-            <p>Includes: </p>
-            <ul>
-              <li>
-                1st night hotel accommodation after returning from the
-                Rainforest at Hotel Wyndam at the Quito Airport Sunday the 14th
-              </li>
-              <li>Roundtrip Airfare from Quito to Galapagos Islands</li>
-              <li>3 Nights Hotel Accommodations</li>
-              <li>All Land and Water Transportation</li>
-              <li>All Breakfasts</li>
-              <li>
-                All Excursions/Snorkeling Equipment (Travelers are welcome to
-                bring their own.)
-              </li>
-              <li>Bi-Lingual Naturalist Guide</li>
-            </ul>
-            <p>Total Price with the Galapagos extension: $5024.00 Per Person</p>
-
-            <p>
-              Not Included: $20.00 USD Transit Fee for the Galapagos $100.00 USD
-              Entrance Fee to the Galapagos to be paid at arrival. Lunches and
-              Dinners Extra non-alcohol or alcoholic beverages.
-            </p>
-
-            <h3>Rainforest Journey Only</h3>
-            <p>$2200.00 per person: 4 Nights 5 Days</p>
-            <p>Includes:</p>
-            <ul>
-              <li>Roundtrip Airfare from Quito to Coca</li>
-              <li>Land and Water Transportation from Coca</li>
-              <li>3 Nights at the Amazon Dolphin Lodge</li>
-              <li>1 Night at the Yarino Eco Lodge</li>
-              <li>All Meals</li>
-              <li>All Excursions/Rubber Boots for Hiking</li>
-              <li>Bi-Lingual/Naturalist Tour Guide</li>
-            </ul>
-
-            <p>
-              Does Not Include: Airfare from the United States to Quito, Ecuador
-              Additional non-alcohol and no alcoholic beverages Tips/Gratuities
-              to the drivers and guides.
-            </p>
+              <ul>
+                <li>Roundtrip Airfare from Quito to Coca</li>
+                <li>Land and Water Transportation from Coca</li>
+                <li>3 Nights at the Amazon Dolphin Lodge</li>
+                <li>1 Night at the Yarino Eco Lodge</li>
+                <li>All Meals</li>
+                <li>All Excursions/Rubber Boots for Hiking</li>
+                <li>Bi-Lingual/Naturalist Tour Guide</li>
+              </ul>
+              <p>None of the journeys include:</p>
+              <ul>
+                <li>Airfare from the United States to Quito, Ecuador</li>
+                <li>Alcoholic Beverages</li>
+                <li>Tips/Gratuities to the drivers and guides.</li>
+              </ul>
+            </section>
           </section>
         </section>
       </div>
