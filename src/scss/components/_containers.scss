@@ -4,6 +4,11 @@
   background-size: cover;
   background-repeat: no-repeat;
 
+  @include media-xx{
+    max-width: 1400px;
+    margin: auto;
+  }
+
   &--home {
     background-image: url("../assets/img/home-page-bg.jpg");
     @include media-sm {

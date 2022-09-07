@@ -7,9 +7,6 @@
 @import "components/footer";
 @import "components/cards";
 @import "components/containers";
-@import "./pages/who-we-are";
+@import "layouts/global";
 
-.enrichment {
-    color: $primary-txt-clr;
-    background-color: $primary-bg-clr;
-}
+
