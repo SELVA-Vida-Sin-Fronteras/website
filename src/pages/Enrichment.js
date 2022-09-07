@@ -52,7 +52,7 @@ const Enrichment = () => {
                   key={i}
                   className={i === 0 ? "carousel-item active" : "carousel-item"}
                   data-interval="10000"
-                  // style={{ height: "20vh" }}
+                  style={{ height: "50vh" }}
                 >
                   <img src={slide.path} className="d-block w-100" alt="" />
                 </div>
@@ -158,13 +158,13 @@ const Enrichment = () => {
               <p>Includes: All Hotel Accommodations including all breakfasts</p>
 
               <ul>
-                <li>
+                <li className="list-group-item">
                   May 5th Day 1, arrive by 9:00 pm to Quito
-                  <ul>
+                  <ul >
                     <li>One night at Airport Holiday Inn B-included</li>
                   </ul>
                 </li>
-                <li>
+                <li className="list-group-item">
                   May 6th Day 2 Breakfast and tour bus to Riobamba
                   <ul>
                     <li>One night La Andaluza Hacienda B-included</li>
@@ -175,7 +175,7 @@ const Enrichment = () => {
                     </li>
                   </ul>
                 </li>
-                <li>
+                <li className="list-group-item">
                   May 7 Day 3 Breakfast, tour bus to Cuenca
                   <ul>
                     <li>Stop at Ingapirca Inca Ruins for a guided tour</li>
@@ -185,7 +185,7 @@ const Enrichment = () => {
                     <li>Dinner on our own, options provided</li>
                   </ul>
                 </li>
-                <li>
+                <li className="list-group-item">
                   May 8th Day 4 Breakfast, tour bus to:
                   <ul>
                     <li>The Panama Hat Factory</li>
@@ -200,7 +200,7 @@ const Enrichment = () => {
                     <li>2nd night at Boutique Hotel Santa Lucia.</li>
                   </ul>
                 </li>
-                <li>
+                <li className="list-group-item">
                   May 9th Day 5 Breakfast, fly back to Quito
                   <ul>
                     <li>Bus to Quito for a brief city tour</li>
@@ -218,7 +218,7 @@ const Enrichment = () => {
                     <li>Capital of Ecuador. Dinner not included.</li>
                   </ul>
                 </li>
-                <li>
+                <li className="list-group-item">
                   May 10th Day 6 Breakfast return to the Quito Airport (Day 1 in
                   the Rainforest)
                   <ul>
@@ -233,7 +233,7 @@ const Enrichment = () => {
                     <li>Night hike</li>
                   </ul>
                 </li>
-                <li>
+                <li className="list-group-item">
                   May 11th, Day 7 (Day 2 in the Rainforest)
                   <ul>
                     <li> Breakfast </li>
@@ -250,7 +250,7 @@ const Enrichment = () => {
                     <li>Dinner at the lodge</li>
                   </ul>
                 </li>
-                <li>
+                <li className="list-group-item">
                   May 12th Day 8 (Day 3 in the Rainforest)
                   <ul>
                     <li>Breakfast</li>
@@ -271,7 +271,7 @@ const Enrichment = () => {
                     <li>Optional night activity.</li>
                   </ul>
                 </li>
-                <li>
+                <li className="list-group-item">
                   May 13th Day 9 (Day 4 in the Rainforest) 4th night at the
                   Yarino Lodge
                   <ul>
@@ -280,7 +280,7 @@ const Enrichment = () => {
                   </ul>
                 </li>
 
-                <li>
+                <li className="list-group-item">
                   May 14th Day 10 (Day 5 in the Rainforest, return to Quito and
                   flights home.
                   <ul>
@@ -302,7 +302,7 @@ const Enrichment = () => {
                   </ul>
                 </li>
 
-                <li>
+                <li className="list-group-item">
                   Included in the Rainforest Journey:
                   <ul>
                     <li>Roundtrip airfare to Coca</li>
