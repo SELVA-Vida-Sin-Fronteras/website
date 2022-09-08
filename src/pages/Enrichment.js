@@ -1,4 +1,3 @@
-import { slides } from "../Data/Slides";
 
 const Enrichment = () => {
   return (
@@ -39,331 +38,190 @@ const Enrichment = () => {
               the Amazon Reserve for Peace For detailed
             </p>
           </section>
+          <section className="my-5">
+            <h2>May 2023 Trip Itinerary </h2>
+            <table className="table bg-light my-4">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Plan</th>
+                  <th>Hotel (meals)</th>
+                  <th colSpan="2">Day/Night</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="table-success">
+                  <td>5/5/23</td>
+                  <td>All guests arrive by 9pm</td>
+                  <td>Airport Holiday Inn (B)</td>
+                  <td>1/1</td>
+                  <td></td>
+                </tr>
+                <tr className="table-success">
+                  <td>5/7/23</td>
+                  <td>
+                    <ol>
+                      <li>Breakfast</li>
+                      <li>Tour bus to Cuenca</li>
+                      <li>Stop at Ingapirca Ruins for a</li>
+                      <li>Guided tour</li>
+                    </ol>
+                  </td>
+                  <td>La Andaluza Hacienda (B)</td>
+                  <td>2/2</td>
+                  <td></td>
+                </tr>
+                <tr className="table-success">
+                  <td>5/8/23</td>
+                  <td>
+                    <ol>
+                      <li>Breakfast</li>
+                      <li>Tour Bus to Panama Hat Factory</li>
+                      <li>
+                        Bus to the town of Gualaceo and La Casa de la Makata
+                      </li>
+                      <li>
+                        Weaving and natural dye workshop with the Jiménez
+                        family, 3 generations of weavers
+                      </li>
+                      <li>Lunch (Included.)</li>
+                    </ol>
+                  </td>
+                  <td>Boutique Hotel Santa Lucia (B)</td>
+                  <td>4/4</td>
+                  <td></td>
+                </tr>
+                <tr className="table-success">
+                  <td>5/9/23</td>
 
-          <div
-            id="carouselExampleControls"
-            className="carousel slide my-4"
-            data-bs-ride="carousel"
-            aria-hidden="true"
-          >
-            <div className="carousel-inner">
-              {slides.map((slide, i) => (
-                <div
-                  key={i}
-                  className={i === 0 ? "carousel-item active" : "carousel-item"}
-                  data-interval="10000"
-                  style={{ height: "50vh" }}
-                >
-                  <img src={slide.path} className="d-block w-100" alt="" />
-                </div>
-              ))}
-            </div>
+                  <td>
+                    <ol>
+                      <li>Breakfast</li>
+                      <li>fly to Quito</li>
+                      <li>City Tour</li>
+                      <li> Archeological Mindalae Museum (lunch included). </li>
+                      <li>
+                        Dinner at El Ventanal with amazing views of the Capital
+                        (dinner cost not included)
+                      </li>
+                    </ol>
+                  </td>
+                  <td>Mercure Alamende (B)</td>
+                  <td>5/5</td>
+                  <td></td>
+                </tr>
+                <tr className="table-danger">
+                  <td>5/10/23</td>
+                  <td>
+                    <ol>
+                      <li>Return to Quito Airport</li>
+                      <li>Fly to village of Coca</li>
+                      <li>Van to Amazon Dolphin Reserve</li>
+                      <li>Night Hike</li>
+                    </ol>
+                  </td>
+                  <td>Amazon Dolphin Reserve (BLD)</td>
+                  <td>6/6</td>
 
-            <button
-              className="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="prev"
-            >
-              <span
-                className="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="visually-hidden">Previous</span>
-            </button>
-            <button
-              className="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="next"
-            >
-              <span
-                className="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="visually-hidden">Next</span>
-            </button>
-          </div>
-          <section className="schedule">
-            <h2>Schedule</h2>
-            <ol>
-              <li className="list-group-item">
-                Day 1: Arrive in Quito-transfer to Hotel Wyndham
-              </li>
-              <li className="list-group-item">
-                Day 2: Travel by van to Riobamba for a stay at La Andaluza
-                Hacienda and visit to Quilotoa Crater Lake.
-              </li>
-              <li className="list-group-item">
-                Day 3: Leave for Cuenca with a stop at the Ingapirca Inca Ruins.
-                Stay at Boutique Hotel Santa Lucia
-              </li>
-              <li className="list-group-item">
-                Day 4: Visit the Panama Hat Factory Visit a 3rd generation
-                weaver who works with natural dyes, fibers and a backstrap loom
-                to design ponchos, scarves, wall hangings and rugs.
-              </li>
-              <li className="list-group-item">
-                Day 5: Flight to Quito and Amazon Rainforest, Coca Pueblo. Night
-                hike.
-              </li>
-              <li className="list-group-item">
-                Day 6: Amazon Dolphin Lodge Early morning paddle canoe ride on
-                Pañacocha Lake. Learn about medicinal plants and watch for
-                wildlife. Lunch in the jungle then piranha fishing, watch for
-                pink dolphins
-              </li>
-              <li className="list-group-item">
-                Day 7: Hike in the forest Afternoon learn about how to use
-                blowguns and other indigenous activities. After dinner night
-                paddle canoe ride to enjoy the magic at night and another chance
-                to spot pink dolphins
-              </li>
-              <li className="list-group-item">
-                Day 8-9: Cultural day -a visit to the Kichwa community, enjoy
-                local crafts plus a traditional amazon meal. Travel on Napo
-                River, stop at clay licking wall to see parrots and parakeets,
-                final stop at Yarina Lodge for overnight and night activities
-              </li>
-              <li className="list-group-item">
-                Day 10: Morning canoe back to Coca for a morning flight back to
-                Quito in preparation for Galapagos
-              </li>
-              <li className="list-group-item">
-                Day 11: Fly into the Galapagos from Quito and go by water taxi
-                to San Cristobal Island. Afternoon for Tijeretas or Loberias
-                hike and snorkeling
-              </li>
-              <li className="list-group-item">
-                Day 12: 360-degree tour around San Cristobal
-              </li>
-              <li className="list-group-item">
-                Day 13: Hiking and snorkeling around San Cristobal Island
-              </li>
-              <li className="list-group-item">
-                Day 14: Flight back to Quito. Return to US from Quito
-              </li>
-            </ol>
-          </section>
-
-          <section className="pricing">
-            <h2>May 2023 Enrichment Journey</h2>
-            <section>
-              <h3>
-                Quito-Cuenca-Rainforest with Galapagos Island extension journey
-                option.
-              </h3>
-              <p>15 day, 10 day, 5 day options</p>
-              <p>Per Person: 10 days Arriving May 5th Departing May 14th</p>
-              <p>Includes: All Hotel Accommodations including all breakfasts</p>
-
-              <ul>
-                <li className="list-group-item">
-                  May 5th Day 1, arrive by 9:00 pm to Quito
-                  <ul >
-                    <li>One night at Airport Holiday Inn B-included</li>
-                  </ul>
-                </li>
-                <li className="list-group-item">
-                  May 6th Day 2 Breakfast and tour bus to Riobamba
-                  <ul>
-                    <li>One night La Andaluza Hacienda B-included</li>
-                    <li>Hike at the Quilotoa Crater Lake</li>
-                    <li>
-                      Cost of lunch and dinner on our own, places to eat at La
-                      Andaluza.
-                    </li>
-                  </ul>
-                </li>
-                <li className="list-group-item">
-                  May 7 Day 3 Breakfast, tour bus to Cuenca
-                  <ul>
-                    <li>Stop at Ingapirca Inca Ruins for a guided tour</li>
-                    <li>Lunch on our own, options provided.</li>
-                    <li>Arrive at Cuenca first night at the Boutique</li>
-                    <li>Hotel Santa Lucia B-included</li>
-                    <li>Dinner on our own, options provided</li>
-                  </ul>
-                </li>
-                <li className="list-group-item">
-                  May 8th Day 4 Breakfast, tour bus to:
-                  <ul>
-                    <li>The Panama Hat Factory</li>
-                    <li>
-                      Bus to the town of Gualaceo and La Casa de la Makata. The
-                      Jiménez family live and work there, keeping ancient
-                      weaving and dying methods alive. Workshop with lunch
-                      included: IKAT Weaving in Ecuador, A Colorful Cultural
-                      UNESCO Treasure
-                    </li>
-                    <li>Dinner on our own, options provided</li>
-                    <li>2nd night at Boutique Hotel Santa Lucia.</li>
-                  </ul>
-                </li>
-                <li className="list-group-item">
-                  May 9th Day 5 Breakfast, fly back to Quito
-                  <ul>
-                    <li>Bus to Quito for a brief city tour</li>
-                    <li>
-                      Check in to Hotel Mercure Alamende for 1 night includes
-                      breakfast.
-                    </li>
-                    <li>
-                      Tour of an archeological museum Mindalae with lunch
-                      included.
-                    </li>
-                    <li>
-                      Dinner at restaurant El Ventanal with amazing views of the
-                    </li>
-                    <li>Capital of Ecuador. Dinner not included.</li>
-                  </ul>
-                </li>
-                <li className="list-group-item">
-                  May 10th Day 6 Breakfast return to the Quito Airport (Day 1 in
-                  the Rainforest)
-                  <ul>
-                    <li>Return by van to the airport/meet others coming</li>
-                    <li>for only the Rainforest Journey.</li>
-                    <li>
-                      Fly to the village of Coca Transfer by van to the Amazon
-                      Dolphin Reserve
-                    </li>
-                    <li>Lunch stop (not included)</li>
-                    <li>Dinner at the reserve</li>
-                    <li>Night hike</li>
-                  </ul>
-                </li>
-                <li className="list-group-item">
-                  May 11th, Day 7 (Day 2 in the Rainforest)
-                  <ul>
-                    <li> Breakfast </li>
-                    <li>Early morning canoe ride to enjoy the beauty of</li>
-                    <li>
-                      Pancocha Lake and walk on a trail to learn about medicinal
-                      plants and with some luck wildlife. (Pink Dolphins)
-                    </li>
-                    <li>Lunch in the Rainforest</li>
-                    <li>
-                      In the afternoon learn about Piranha (catch & release) and
-                      other wildlife in the river area.
-                    </li>
-                    <li>Dinner at the lodge</li>
-                  </ul>
-                </li>
-                <li className="list-group-item">
-                  May 12th Day 8 (Day 3 in the Rainforest)
-                  <ul>
-                    <li>Breakfast</li>
-                    <li>
-                      This day is a cultural day we will visit the Kichwa
-                      community to see their local crafts.{" "}
-                    </li>
-                    <li>
-                      We will have a stop at a clay licking wall on Napo river
-                      side to spot hopefully parrots and parakeets
-                    </li>
-                    <li>Lunch with Kichwa families.</li>
-                    <li>Afternoon we keep going on Napo river towards</li>
-                    <li>
-                      Yarina Lodge reserve for our 4th night in the Rainforest
-                    </li>
-                    <li>Dinner</li>
-                    <li>Optional night activity.</li>
-                  </ul>
-                </li>
-                <li className="list-group-item">
-                  May 13th Day 9 (Day 4 in the Rainforest) 4th night at the
-                  Yarino Lodge
-                  <ul>
-                    <li>Dinner</li>
-                    <li>Optional night activity</li>
-                  </ul>
-                </li>
-
-                <li className="list-group-item">
-                  May 14th Day 10 (Day 5 in the Rainforest, return to Quito and
-                  flights home.
-                  <ul>
-                    <li>
-                      After breakfast take the canoe and go back to Coca for a
-                      morning flight back to Quito
-                    </li>
-                    <li>
-                      People returning to their home states or countries will
-                      fly that day.
-                    </li>
-                    <li>
-                      People flying the next morning to the Galapagos Islands
-                      will stay one night At the Airport Holiday Inn, Breakfast
-                      included (There are only 2 flights to the Galapagos
-                      Islands on Sunday, and we will not return in time from the
-                      Rainforest.)
-                    </li>
-                  </ul>
-                </li>
-
-                <li className="list-group-item">
-                  Included in the Rainforest Journey:
-                  <ul>
-                    <li>Roundtrip airfare to Coca</li>
-                    <li>All meals B-L-D</li>
-                    <li>All Excursions/Rubber boots for hiking</li>
-                    <li>All water and land transportation,</li>
-                    <li>Bi-Lingual Tour Guide.</li>
-                  </ul>
-                  Not included, Airfare to Ecuador from other countries, lunches
-                  except for the one provided during the workshop and the museum
-                  lunch in Quito, Dinners, extra non-alcohol and alcohol
-                  beverages, tips and gratuities to the bus driver and tour
-                  guide. $3425.00 for the 10 day journey
-                </li>
-              </ul>
-            </section>
-
-            <section>
-              <h3>Galapagos Extension</h3>
-              <p>
-                Galapagos Islands Extension Journey: May 14th Return May 18th
-              </p>
-              <p>$1843.00 for 4 days and 4 nights, 3 nights on the Galapagos</p>
-              <p>Includes: </p>
-              <ul>
-                <li>1 night Holiday Inn Airport Quito w/breakfast</li>
-                <li>Roundtrip Airfare from Quito to Galapagos Islands</li>
-                <li>3 Nights Hotel Accommodations</li>
-                <li>All Land and Water Transportation</li>
-                <li>All Breakfasts</li>
-                <li>
-                  All Excursions/Snorkeling Equipment (Travelers are welcome to
-                  bring their own.)
-                </li>
-                <li>Bi-Lingual Naturalist Guide</li>
-              </ul>
-              <p>Total Price with the Galapagos extension: $5268.00</p>
-              Not Included is the U.S dollars $20.00 transit fee or the $100
-              Galapagos entry fee to be paid in cash before entering.
-            </section>
-            <section>
-              <h3>RAINFOREST JOURNEY ONLY</h3>
-
-              <p>$1765.00 per person 4 nights 5 days Includes:</p>
-
-              <ul>
-                <li>Roundtrip Airfare from Quito to Coca</li>
-                <li>Land and Water Transportation from Coca</li>
-                <li>3 Nights at the Amazon Dolphin Lodge</li>
-                <li>1 Night at the Yarino Eco Lodge</li>
-                <li>All Meals</li>
-                <li>All Excursions/Rubber Boots for Hiking</li>
-                <li>Bi-Lingual/Naturalist Tour Guide</li>
-              </ul>
-              <p>None of the journeys include:</p>
-              <ul>
-                <li>Airfare from the United States to Quito, Ecuador</li>
-                <li>Alcoholic Beverages</li>
-                <li>Tips/Gratuities to the drivers and guides.</li>
-              </ul>
-            </section>
+                  <td>1/1</td>
+                </tr>
+                <tr className="table-danger">
+                  <td>5/11/23</td>
+                  <td>
+                    <ol>
+                      <li>Breakfast</li>
+                      <li>Canoe ride at Pancocha Lake</li>
+                      <li>Piranha catch andrelease</li>
+                      <li>Hike to learn about medicinal plants</li>
+                    </ol>
+                  </td>
+                  <td>Amazon Dolphin Reserve (BLD)</td>
+                  <td>7/7</td>
+                  <td>2/2</td>
+                </tr>
+                <tr className="table-danger">
+                  <td>5/12/23</td>
+                  <td>
+                    <ol>
+                      <li>Breakfast</li>
+                      <li>Visit Kichwa community</li>
+                      <li>clay licking wall on Napo</li>
+                      <li>River, Lunch with Kichwa Family (included)</li>
+                      <li>night activity (optional)</li>
+                    </ol>
+                  </td>
+                  <td>Amazon Dolphin Reserve (BLD)</td>
+                  <td>8/8</td>
+                  <td>3/3</td>
+                </tr>
+                <tr className="table-danger">
+                  <td>5/13/23</td>
+                  <td>
+                    <ol>
+                      <li>Napa River Canoe trip</li>
+                      <li>Pink River Dolphn sightseeing</li>
+                      <li>NightActivity (optional)</li>
+                    </ol>
+                  </td>
+                  <td>Yarina Lodge Reserve (BLD)</td>
+                  <td>9/9</td>
+                  <td>4/4</td>
+                </tr>
+                <tr className="table-danger">
+                  <td>5/14/23</td>
+                  <td>
+                    <ol>
+                      <li>Breakfast</li>
+                      <li>boat back to Coca for Flight to Quito.</li>
+                    </ol>
+                    <ul>
+                      <li>
+                        Individuals planning to go back home to depature
+                        afternoon/evening.{" "}
+                      </li>
+                      <li>Remaining travelors will stay overnight</li>
+                    </ul>
+                  </td>
+                  <td>Holiday Inn</td>
+                  <td>10/9</td>
+                  <td>5/4</td>
+                </tr>
+                <tr>
+                  <td>5/15/23</td>
+                  <td colSpan="4" rowSpan="4" className="text-center fs-1">
+                    Galapagos Trip TBD
+                  </td>
+                </tr>
+                <tr>
+                  <td>5/16/23</td>
+                </tr>
+                <tr>
+                  <td>5/17/23</td>
+                </tr>
+                <tr>
+                  <td>5/18/23</td>
+                </tr>
+                <tr>
+                  <td colSpan="5" className="text-center">
+                    <ul>
+                      <li className="list-group-item fs-3">
+                        10 Day / 9Night: $3,425
+                      </li>
+                      <li className="list-group-item fs-3">
+                        Rainforest Only (5 days/4 nights): $1,765{" "}
+                      </li>
+                      <li className="list-group-item fs-3">
+                        Galapagos add on Cost: $1,843{" "}
+                      </li>
+                      <li className="list-group-item fs-3 text-uppercase fw-bold">
+                        Full Cost: $5,268
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </section>
         </section>
       </div>
