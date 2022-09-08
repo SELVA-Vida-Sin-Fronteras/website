@@ -1,17 +1,10 @@
-
 const Enrichment = () => {
   return (
     <div
       data-testid="enrichment"
       className=" justify-content-center page enrichment"
     >
-      <div className="img-container-hero img-container-hero--journey">
-        <section className="card card__hero m-auto">
-          <h1 className="card-title card-header">Ecuador Enrichment Journey</h1>
-
-          <p className="card-body">May 5-19, 2023</p>
-        </section>
-      </div>
+      <div className="img-container-hero img-container-hero--journey"></div>
 
       <div className="container p-5">
         <section className="journey-2023">
@@ -38,7 +31,7 @@ const Enrichment = () => {
               the Amazon Reserve for Peace For detailed
             </p>
           </section>
-          <section className="my-5">
+          <section data-testid="itinerary" className="my-5">
             <h2>May 2023 Trip Itinerary </h2>
             <table className="table bg-light my-4">
               <thead>
@@ -223,6 +216,26 @@ const Enrichment = () => {
               </tbody>
             </table>
           </section>
+
+          <form>
+              <label htmlFor="firstName" className="form-label">
+                First Name
+              </label>
+              <input id="firstName" type="text" />
+              <label htmlFor="lastName" className="form-label">
+                Last Name
+              </label>
+              <input id="lastName" type="text" />
+              <label htmlFor="email" className="form-label">
+                E-mail
+              </label>
+              <input id="email" type="text" />
+              <label htmlFor="tripOption" className="form-label">
+                Trip Option
+              </label>
+              <input id="tripOption" type="text" />
+              <button disabled>Sign Up</button>
+          </form>
         </section>
       </div>
     </div>
