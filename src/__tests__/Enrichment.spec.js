@@ -56,6 +56,9 @@ describe("Enrichment Journey Page", () => {
     });
   });
   describe("User interaction", () => {
-    
+    const onSubmit = jest.fn()
+    it("should handle submit", ()=> {
+      userEvent.click(button)
+    })
   });
 });
