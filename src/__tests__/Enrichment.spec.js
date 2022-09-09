@@ -2,7 +2,12 @@ import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import Enrichment from "../pages/Enrichment";
 
-let firstNameInput, lastNameInput, emailInput, phoneInput, tripOptionInput, button;
+let firstNameInput,
+  lastNameInput,
+  emailInput,
+  phoneInput,
+  tripOptionInput,
+  button;
 
 const setup = () => {
   render(<Enrichment />);
@@ -12,7 +17,6 @@ const setup = () => {
   phoneInput = screen.getByLabelText("Phone");
   tripOptionInput = screen.getByLabelText("Trip Option");
   button = screen.queryByRole("button", { name: "Sign Up" });
-
 };
 
 beforeEach(() => setup());
@@ -48,7 +52,7 @@ describe("Enrichment Journey Page", () => {
       expect(tripOptionInput).toBeInTheDocument();
     });
     it("should have a sign up button", () => {
-      expect(button).toBeInTheDocument()
+      expect(button).toBeInTheDocument();
     });
   });
   describe("User interaction", () => {
@@ -56,7 +60,12 @@ describe("Enrichment Journey Page", () => {
       expect(button).toBeDisabled();
     });
     it("it should enable the button when required fields are filled", () => {
-      
+      userEvent.type(firstNameInput, "Jane");
+      userEvent.type(lastNameInput, "Doe")
+      userEvent.type(emailInput, "JaneDoe@mail.com")
+      userEvent.type(phoneInput, "9008675309")
+      userEvent.type(tripOptionInput, "Rainforest Only")
+      // expect(button).toBeEnabled()
     });
   });
 });
