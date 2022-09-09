@@ -19,6 +19,9 @@ describe("Enrichment Journey Page", () => {
     const itinerary = screen.getByTestId("itinerary");
     expect(itinerary).toBeInTheDocument();
   });
+  it("should have a sign up form", ()=> {
+    const form = screen.getByTestId("signup-form")
+  })
   it("should have a first name input field", () => {
     const input = screen.getByLabelText("First Name");
   });
@@ -28,6 +31,9 @@ describe("Enrichment Journey Page", () => {
   it("should have an email input field", () => {
     const input = screen.getByLabelText("E-mail");
   });
+  it("should have a phone number input field", ()=> {
+    const input = screen.getByLabelText("Phone")
+  })
   it("should have a trip option input field", () => {
     const input = screen.getByLabelText("Trip Option");
   });

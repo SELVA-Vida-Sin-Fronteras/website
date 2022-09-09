@@ -217,7 +217,9 @@ const Enrichment = () => {
             </table>
           </section>
 
-          <form>
+          <form data-testid="signup-form" className="card bg-light text-dark">
+            <h2 className="card-header text-center fs-1">Start Your Journey</h2>
+            <div className="card-body">
               <label htmlFor="firstName" className="form-label">
                 First Name
               </label>
@@ -230,11 +232,16 @@ const Enrichment = () => {
                 E-mail
               </label>
               <input id="email" type="text" />
+              <label htmlFor="phoneNumber" className="form-label">
+                Phone
+              </label>
+              <input id="phoneNumber" type="number" />
               <label htmlFor="tripOption" className="form-label">
                 Trip Option
               </label>
               <input id="tripOption" type="text" />
               <button disabled>Sign Up</button>
+            </div>
           </form>
         </section>
       </div>
