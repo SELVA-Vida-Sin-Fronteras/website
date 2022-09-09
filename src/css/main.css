@@ -11137,12 +11137,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   text-transform: uppercase;
 }
 
-.btn-secondary {
+.btn-customSecondary {
   background-color: white;
   color: #548136;
 }
 
-.btn-primary {
+.btn-customPrimary {
   background-color: #548136;
 }
 

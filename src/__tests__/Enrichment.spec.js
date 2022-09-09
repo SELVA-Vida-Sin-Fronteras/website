@@ -56,16 +56,9 @@ describe("Enrichment Journey Page", () => {
     });
   });
   describe("User interaction", () => {
-    it("should disable the button initially", () => {
-      expect(button).toBeDisabled();
-    });
-    it("it should enable the button when required fields are filled", () => {
-      userEvent.type(firstNameInput, "Jane");
-      userEvent.type(lastNameInput, "Doe")
-      userEvent.type(emailInput, "JaneDoe@mail.com")
-      userEvent.type(phoneInput, "9008675309")
-      userEvent.type(tripOptionInput, "Rainforest Only")
-      // expect(button).toBeEnabled()
-    });
+    const onSubmit = jest.fn()
+    it("should handle submit", ()=> {
+      userEvent.click(button)
+    })
   });
 });

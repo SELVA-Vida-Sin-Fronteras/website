@@ -5,12 +5,12 @@
     text-transform: uppercase;
 
 
-    &-secondary {
+    &-customSecondary {
         background-color: $secondary-btn-bg-color;
         color: $secondary-btn-txt-clr;
     }
 
-    &-primary {
+    &-customPrimary {
     background-color: $primary-btn-bg-clr;
     }
     &-lg {
