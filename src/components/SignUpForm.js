@@ -24,7 +24,7 @@ const SignUpForm = ()=> {
                 Trip Option
               </label>
               <input id="tripOption" type="text" className="form-control" />
-              <button className="btn btn-primary btn-lg my-4" disabled>
+              <button className="btn btn-primary btn-lg my-4">
                 Sign Up
               </button>
             </div>
