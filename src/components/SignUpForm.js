@@ -1,6 +1,15 @@
+import { useState } from "react";
 const SignUpForm = () => {
-  function handleSubmit(evt) {
-    evt.preventDefault();
+ 
+ const [help, setHelp] = useState(false)
+  let inputClass = "form-control"
+  if (help) {
+    inputClass += " is-invalid"
+  }
+
+  const handleSubmit = event => {
+    event.preventDefault();
+    setHelp(true)
   }
   return (
     <form
@@ -13,7 +22,7 @@ const SignUpForm = () => {
         <label htmlFor="firstName" className="form-label">
           First Name
         </label>
-        <input id="firstName" type="text" className="form-control" />
+        <input id="firstName" type="text" className={inputClass} />
         <label htmlFor="lastName" className="form-label">
           Last Name
         </label>

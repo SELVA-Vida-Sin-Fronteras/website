@@ -56,9 +56,22 @@ describe("Enrichment Journey Page", () => {
     });
   });
   describe("User interaction", () => {
-    const onSubmit = jest.fn()
-    it("should handle submit", ()=> {
-      userEvent.click(button)
+    describe("when the user clicks the submit button", ()=> {
+      const onSubmit = jest.fn()
+      it("should handle submit", ()=> {
+        userEvent.click(button)
+      })
+      describe("if an imput field is empty", ()=> {
+        it("should display an error state when the first name field is empty", ()=>{
+          // const error = screen.getByLabelText('Please provide first name')
+          expect(firstNameInput.classList).not.toContain('is-invalid')          
+          userEvent.click(button)
+          expect(firstNameInput.classList).toContain('is-invalid')
+          // expect(error.classList).toContain('invalid-feedback')
+        })
+      })
     })
+    
+
   });
 });
