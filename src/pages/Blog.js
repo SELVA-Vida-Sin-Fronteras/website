@@ -8,13 +8,14 @@ const Blog = () => {
         <h1 className="display-1">Friends of SELVA Blog</h1>
       </section>
       <div className="container">
-        <section className="featured card p-4 p-md-5 mb-4 text-white rounded bg-dark">
+        <section data-testid="featured-article" className="featured card p-4 p-md-5 mb-4 text-white rounded bg-dark">
           <div className="row g-0">
             <div className="col-lg-8">
               <div className="card-body">
-                <h2 className="card-title display-4 fst-italic">
+                <h2>Featured Article</h2>
+                <h3 className="card-title display-4 fst-italic">
                   Inspiration from the Rainforest
-                </h2>
+                </h3>
                 <p className="card-text lead my-3">
                   It's easy to sit in a comfortable armchair dreaming of saving
                   the world or at least having some impact on the environment.
@@ -41,8 +42,8 @@ const Blog = () => {
 
         <div className="row">
           <div className="col-md-8">
-            <section className="blog-posts p-4">
-              <article className="text-dark fs-4">
+            <section data-testid="articles" className="blog-posts p-4">
+              <article  className="text-dark fs-4">
                 <h2 className="display-6">
                   November 22, 2021 - Judith Farsone
                 </h2>
@@ -64,7 +65,7 @@ const Blog = () => {
             </section>
           </div>
           <div className="col-md-4">
-            <section className="archives">
+            <section data-testid="archives" className="archives">
               <h2 className="display-2">Archives</h2>
               <ul className="list-group">
                 <li className="list-group-item fs-3">
