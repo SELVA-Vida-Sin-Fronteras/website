@@ -7,9 +7,9 @@ import may0521 from "../assets/img/may-5-21.jpg";
 
 const Blog = () => {
   return (
-    <div data-testid="blog" className="p-5">
-      <h1>Friends of SELVA Blog</h1>
-      <article className="nov-22-2021">
+    <div data-testid="blog" className="p-5 page">
+      <h1 className="text-center mb-5">Friends of SELVA Blog</h1>
+      <article className="card p-5 m-auto mb-5" style={{ maxWidth: "60rem" }}>
         <h2>November 22, 2021</h2>
         <h3>Friends of the Amazon Rainforest</h3>
         <p>Written by Judith Fasone</p>
@@ -28,7 +28,7 @@ const Blog = () => {
         </p>
         <p>Judith Fasone</p>
       </article>
-      <article>
+      <article className="card p-5 m-auto mb-5" style={{ maxWidth: "60rem" }}>
         <h1>November 15, 2021</h1>
         <h2>Aboriginal Museum</h2>
         <img src={nov1521} alt="A display of various works of pottery"></img>
@@ -40,7 +40,7 @@ const Blog = () => {
         and blessing our work and our visit. Thank you Grandmother and
         Grandfather!
       </article>
-      <article>
+      <article className="card p-5 m-auto mb-5" style={{ maxWidth: "60rem" }}>
         <h1>November 2, 2021</h1>
         <h2>The Ancients</h2>
         <p>Written by Judith Fasone</p>
@@ -59,7 +59,7 @@ const Blog = () => {
           Are we those women?
         </p>
       </article>
-      <article>
+      <article className="card p-5 m-auto mb-5" style={{ maxWidth: "60rem" }}>
         <h1>October 27, 2021</h1>
         <h2>Artist Talk</h2>
         <p>Written by Judith Farsone</p>
@@ -81,7 +81,7 @@ const Blog = () => {
           allowFullScreen
         ></iframe>
       </article>
-      <article>
+      <article className="card p-5 m-auto mb-5" style={{ maxWidth: "60rem" }}>
         <h1>October 26, 2021</h1>
         <h2>Exploring Ecuador, virtually</h2>
         <img src={oct2621} alt="Amazon River"></img>
@@ -93,7 +93,7 @@ const Blog = () => {
           begins for our fall 2022 tour. Stay tuned!
         </p>
       </article>
-      <article>
+      <article className="card p-5 m-auto mb-5" style={{ maxWidth: "60rem" }}>
         <h1>May 5, 2021</h1>
         <h2>Inspiration from the Rainforest</h2>
         <p>Written by Char Norman</p>
