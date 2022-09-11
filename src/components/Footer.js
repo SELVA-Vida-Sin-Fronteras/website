@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="footer p-5 " data-testid="footer">
+    <footer className="footer p-5 navbar-fixed-bottom" data-testid="footer">
       <nav className="navbar navbar-expand justify-content-center">
         <ul className="navbar-nav ">
           <li className="nav-item">
