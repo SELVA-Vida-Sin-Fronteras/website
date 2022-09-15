@@ -30,9 +30,18 @@ describe("Sign Up Form", () => {
       ${"E-mail"}
       ${"Phone"}
       ${"Trip Option"}
+      ${"Comments"}
     `("should have $fieldName", ({ fieldName }) => {
       expect(screen.getByLabelText(fieldName)).toBeInTheDocument();
     });
+    it("sould have comments as a text area", () => {
+      const comments = screen.getByLabelText("Comments");
+      expect(comments.type).toBe("textarea");
+    });
+    it("should have trip option as select", ()=> {
+      const option = screen.getByLabelText("Trip Option")
+      expect(option.type).toBe("select-one");
+    })
     it("should have a sign up button", () => {
       expect(button).toBeInTheDocument();
     });
@@ -42,12 +51,23 @@ describe("Sign Up Form", () => {
         it("should handle submit", () => {
           userEvent.click(button);
         });
-        describe("if an imput field is empty", () => {
-          it("should display an error state when the first name field is empty", () => {
-            expect(firstNameInput.classList).not.toContain("is-invalid");
-            userEvent.click(button);
-            expect(firstNameInput.classList).toContain("is-invalid");
-          });
+        describe("if an input field is empty", () => {
+          it.each`
+            name
+            ${"First Name"}
+            ${"Last Name"}
+            ${"E-mail"}
+            ${"Phone"}
+            ${"Trip Option"}
+          `(
+            "should display an error state when the $name field is empty",
+            ({ name }) => {
+              const input = screen.getByLabelText(name);
+              expect(input.classList).not.toContain("is-invalid");
+              userEvent.click(button);
+              expect(input.classList).toContain("is-invalid");
+            }
+          );
         });
       });
     });
