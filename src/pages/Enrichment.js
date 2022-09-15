@@ -206,7 +206,7 @@ const Enrichment = () => {
                         Rainforest Only (5 days/4 nights): $1,843{" "}
                       </li>
                       <li className="list-group-item fs-3">
-                        Galapagos add on Cost: $1,843{" "}
+                        Galapagos (4 days /3 nights) add on Cost: $1,843{" "}
                       </li>
                       <li className="list-group-item fs-3 text-uppercase fw-bold">
                         Full Cost: $5,285
