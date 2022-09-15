@@ -200,16 +200,16 @@ const Enrichment = () => {
                   <td colSpan="5" className="text-center">
                     <ul>
                       <li className="list-group-item fs-3">
-                        10 Day / 9Night: $3,425
+                        10 Day / 9Night: $3,442
                       </li>
                       <li className="list-group-item fs-3">
-                        Rainforest Only (5 days/4 nights): $1,765{" "}
+                        Rainforest Only (5 days/4 nights): $1,843{" "}
                       </li>
                       <li className="list-group-item fs-3">
-                        Galapagos add on Cost: $1,843{" "}
+                        Galapagos (4 days /3 nights) add on Cost: $1,843{" "}
                       </li>
                       <li className="list-group-item fs-3 text-uppercase fw-bold">
-                        Full Cost: $5,268
+                        Full Cost: $5,285
                       </li>
                     </ul>
                   </td>
