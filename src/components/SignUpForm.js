@@ -1,12 +1,17 @@
 import { useState } from "react";
-import Input from "./Input";
 const SignUpForm = () => {
-  const [isValid, setIsValid] = useState(false);
+  const [invalid, setInvalid] = useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setIsValid(true);
+    setInvalid(true);
   };
+
+  let inputClass = "form-control"
+  if (invalid) {
+    inputClass += " is-invalid"
+  }
+
   return (
     <form
       data-testid="signup-form"
@@ -15,22 +20,28 @@ const SignUpForm = () => {
     >
       <h2 className="card-header text-center fs-1">Start Your Journey</h2>
       <div className="card-body">
-        <Input id="firstName" label="First Name" help={isValid} />
-        <Input id="lastName" label="Last Name" help={isValid} />
-        <Input id="email" label="E-mail" help={isValid} />
-        <Input id="phone" label="Phone" help={isValid} />
+        <label htmlFor="firstName" className="form-label">First Name</label>
+        <input id="firstName" label="First Name" className={inputClass} />
+        <label htmlFor="lastName" className="form-label">Last Name</label>
+        <input id="lastName" label="Last Name"  className={inputClass}  />
+        <label htmlFor="email" className="form-label">E-mail</label>
+        <input id="email" label="E-mail"  className={inputClass}  />
+        <label htmlFor="phone" className="form-label">Phone</label>
+        <input id="phone" label="Phone"  className={inputClass}  />
         <label htmlFor="tripOption" className="form-label">
           Trip Option
         </label>
         <select
           id="tripOption"
-          className={"form-select form-control"}
+          className={"form-select " + inputClass}
           
         >
           <option defaultValue>Select your journey</option>
           <option value="1">10 Day / 9Night: $3,442</option>
-          <option value="2">Rainforest Only (5 days/4 nights): $1,843</option>
+          <option value="2">Rainforest Only (5 days/4 nights): $1,765</option>
           <option value="3">10 day with Galapagos add on: $5,285</option>
+          <option value="3">Rainforest only day with Galapagos add on: $3,608</option>
+
         </select>
         <label htmlFor="comments" className="form-label">
           Comments

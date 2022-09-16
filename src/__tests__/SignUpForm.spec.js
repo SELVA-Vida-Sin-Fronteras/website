@@ -38,36 +38,41 @@ describe("Sign Up Form", () => {
       const comments = screen.getByLabelText("Comments");
       expect(comments.type).toBe("textarea");
     });
-    it("should have trip option as select", ()=> {
-      const option = screen.getByLabelText("Trip Option")
+    it("should have trip option as select", () => {
+      const option = screen.getByLabelText("Trip Option");
       expect(option.type).toBe("select-one");
-    })
+    });
     it("should have a sign up button", () => {
       expect(button).toBeInTheDocument();
     });
-    describe("User interaction", () => {
-      describe("when the user clicks the submit button", () => {
-        const onSubmit = jest.fn();
-        it("should handle submit", () => {
+  });
+  describe("User interaction", () => {
+    describe("when the user clicks the submit button", () => {
+      const onSubmit = jest.fn();
+      it("should handle submit", () => {
+        userEvent.click(button);
+      });
+      describe("if an input field is empty", () => {
+        it.each`
+          name
+          ${"First Name"}
+          ${"Last Name"}
+          ${"E-mail"}
+          ${"Phone"}
+          ${"Trip Option"}
+        `(
+          "should display an error state when the $name field is empty",
+          ({ name }) => {
+            const input = screen.getByLabelText(name);
+            expect(input.classList).not.toContain("is-invalid");
+            userEvent.click(button);
+            expect(input.classList).toContain("is-invalid");
+          }
+        );
+
+        it("should disable the button when the name field is empty", () => {
           userEvent.click(button);
-        });
-        describe("if an input field is empty", () => {
-          it.each`
-            name
-            ${"First Name"}
-            ${"Last Name"}
-            ${"E-mail"}
-            ${"Phone"}
-            ${"Trip Option"}
-          `(
-            "should display an error state when the $name field is empty",
-            ({ name }) => {
-              const input = screen.getByLabelText(name);
-              expect(input.classList).not.toContain("is-invalid");
-              userEvent.click(button);
-              expect(input.classList).toContain("is-invalid");
-            }
-          );
+          expect(button).toBeDisabled();
         });
       });
     });
