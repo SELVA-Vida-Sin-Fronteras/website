@@ -1,14 +1,14 @@
 import { useState } from "react";
 const SignUpForm = () => {
-  const [isValid, setIsValid] = useState(false);
+  const [invalid, setInvalid] = useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setIsValid(true);
+    setInvalid(true);
   };
 
   let inputClass = "form-control"
-  if (isValid) {
+  if (invalid) {
     inputClass += " is-invalid"
   }
 
@@ -38,8 +38,10 @@ const SignUpForm = () => {
         >
           <option defaultValue>Select your journey</option>
           <option value="1">10 Day / 9Night: $3,442</option>
-          <option value="2">Rainforest Only (5 days/4 nights): $1,843</option>
+          <option value="2">Rainforest Only (5 days/4 nights): $1,765</option>
           <option value="3">10 day with Galapagos add on: $5,285</option>
+          <option value="3">Rainforest only day with Galapagos add on: $3,608</option>
+
         </select>
         <label htmlFor="comments" className="form-label">
           Comments

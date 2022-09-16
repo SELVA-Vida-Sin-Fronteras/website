@@ -29,7 +29,7 @@ const Enrichment = () => {
 
             <p>
               A portion of all fees goes to support our mission and specifically
-              the Amazon Reserve for Peace For detailed
+              the Amazon Reserve for Peace.
             </p>
           </section>
           <section data-testid="itinerary" className="my-5">
@@ -183,30 +183,53 @@ const Enrichment = () => {
                 </tr>
                 <tr>
                   <td>5/15/23</td>
-                  <td colSpan="4" rowSpan="4" className="text-center fs-1">
-                    Galapagos Trip TBD
+                  <td>
+                    <ol>
+                      <li>
+                        Fly into the Galapagos from Quito and go by water taxi
+                        to San Cristobal Island.
+                      </li>
+                      <li>
+                        Afternoon for Tijeretas or Loberias hike and snorkeling
+                      </li>
+                    </ol>
                   </td>
                 </tr>
                 <tr>
                   <td>5/16/23</td>
+                  <td>
+                    <ul>
+                      <li>360-degree tour around San Cristobal</li>
+                    </ul>
+                  </td>
                 </tr>
                 <tr>
                   <td>5/17/23</td>
+                  <td>
+                    <ul>
+                      <li>Hiking and snorkeling around San Cristobal Island</li>
+                    </ul>
+                  </td>
                 </tr>
                 <tr>
                   <td>5/18/23</td>
+                  <td>
+                    <ul>
+                      <li>Flight back to Quito. Return to USA from Quito</li>
+                    </ul>
+                  </td>
                 </tr>
                 <tr>
                   <td colSpan="5" className="text-center">
                     <ul>
                       <li className="list-group-item fs-3">
-                        10 Day / 9Night: $3,442
+                        Quito and Rainforest trip (10 Day / 9Night): $3,442
                       </li>
                       <li className="list-group-item fs-3">
-                        Rainforest Only (5 days/4 nights): $1,843{" "}
+                        Rainforest Only (5 days/4 nights): $1,765
                       </li>
                       <li className="list-group-item fs-3">
-                        Galapagos (4 days /3 nights) add on Cost: $1,843{" "}
+                        Galapagos trip (4 days /3 nights): $1,843
                       </li>
                       <li className="list-group-item fs-3 text-uppercase fw-bold">
                         Full Cost: $5,285
