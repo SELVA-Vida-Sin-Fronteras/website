@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Input from "./Input";
 const SignUpForm = () => {
   const [isValid, setIsValid] = useState(false);
 
@@ -7,6 +6,12 @@ const SignUpForm = () => {
     event.preventDefault();
     setIsValid(true);
   };
+
+  let inputClass = "form-control"
+  if (isValid) {
+    inputClass += " is-invalid"
+  }
+
   return (
     <form
       data-testid="signup-form"
@@ -15,16 +20,20 @@ const SignUpForm = () => {
     >
       <h2 className="card-header text-center fs-1">Start Your Journey</h2>
       <div className="card-body">
-        <Input id="firstName" label="First Name" help={isValid} />
-        <Input id="lastName" label="Last Name" help={isValid} />
-        <Input id="email" label="E-mail" help={isValid} />
-        <Input id="phone" label="Phone" help={isValid} />
+        <label htmlFor="firstName" className="form-label">First Name</label>
+        <input id="firstName" label="First Name" className={inputClass} />
+        <label htmlFor="lastName" className="form-label">Last Name</label>
+        <input id="lastName" label="Last Name"  className={inputClass}  />
+        <label htmlFor="email" className="form-label">E-mail</label>
+        <input id="email" label="E-mail"  className={inputClass}  />
+        <label htmlFor="phone" className="form-label">Phone</label>
+        <input id="phone" label="Phone"  className={inputClass}  />
         <label htmlFor="tripOption" className="form-label">
           Trip Option
         </label>
         <select
           id="tripOption"
-          className={"form-select form-control"}
+          className={"form-select " + inputClass}
           
         >
           <option defaultValue>Select your journey</option>
