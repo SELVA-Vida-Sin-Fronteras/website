@@ -5,7 +5,10 @@ const Enrichment = () => {
       data-testid="enrichment"
       className=" justify-content-center page enrichment"
     >
-      <div className="img-container-hero img-container-hero--journey"></div>
+      <div
+        className="img-container-hero img-container-hero--journey m-auto"
+        style={{ maxWidth: 700 }}
+      ></div>
 
       <div className="container p-5">
         <section className="journey-2023">
@@ -53,17 +56,30 @@ const Enrichment = () => {
                   <td></td>
                 </tr>
                 <tr className="table-success">
+                  <td>5/6/23</td>
+                  <td>
+                    <ul>
+                      <li>
+                        Travel by van to Riobamba for a stay at La Andaluza
+                        Hacienda and a visit to Quilotoa Crater Lake.
+                      </li>
+                    </ul>
+                  </td>
+                  <td>La Andaluza Hacienda</td>
+                  <td>2/2</td>
+                  <td></td>
+                </tr>
+                <tr className="table-success">
                   <td>5/7/23</td>
                   <td>
                     <ol>
                       <li>Breakfast</li>
                       <li>Tour bus to Cuenca</li>
-                      <li>Stop at Ingapirca Ruins for a</li>
-                      <li>Guided tour</li>
+                      <li>Stop at Ingapirca Inca Ruins for a guided tour.</li>
                     </ol>
                   </td>
                   <td>La Andaluza Hacienda (B)</td>
-                  <td>2/2</td>
+                  <td>3/3</td>
                   <td></td>
                 </tr>
                 <tr className="table-success">
@@ -79,7 +95,7 @@ const Enrichment = () => {
                         Weaving and natural dye workshop with the Jiménez
                         family, 3 generations of weavers
                       </li>
-                      <li>Lunch (Included.)</li>
+                      <li>Lunch</li>
                     </ol>
                   </td>
                   <td>Boutique Hotel Santa Lucia (B)</td>
@@ -101,7 +117,7 @@ const Enrichment = () => {
                       </li>
                     </ol>
                   </td>
-                  <td>Mercure Alamende (B)</td>
+                  <td>Hotel Mercure Alamende (B)</td>
                   <td>5/5</td>
                   <td></td>
                 </tr>
@@ -126,8 +142,11 @@ const Enrichment = () => {
                     <ol>
                       <li>Breakfast</li>
                       <li>Canoe ride at Pancocha Lake</li>
-                      <li>Piranha catch andrelease</li>
-                      <li>Hike to learn about medicinal plants</li>
+                      <li>Piranha catch and release</li>
+                      <li>
+                        3 hour hike to learn about medicinal plants and
+                        wildlife.
+                      </li>
                     </ol>
                   </td>
                   <td>Amazon Dolphin Reserve (BLD)</td>
@@ -171,13 +190,13 @@ const Enrichment = () => {
                     </ol>
                     <ul>
                       <li>
-                        Individuals planning to go back home to depature
-                        afternoon/evening.{" "}
+                        Individuals returning home on 05/14 can remain at the
+                        Quito Airport for late afternoon/evening departures.
                       </li>
-                      <li>Remaining travelors will stay overnight</li>
+                      <li>Remaining travelers will stay overnight</li>
                     </ul>
                   </td>
-                  <td>Holiday Inn</td>
+                  <td>Holiday Inn (B)</td>
                   <td>10/9</td>
                   <td>5/4</td>
                 </tr>
@@ -217,6 +236,20 @@ const Enrichment = () => {
                     <ul>
                       <li>Flight back to Quito. Return to USA from Quito</li>
                     </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td colSpan="5">
+                    Hotel selection with breakfast included to be announced.
+                    Lunch, dinner, gratuities not included. US $20.00 transit
+                    fee and the $100.00 Galapagos entry fee to be paid in cash
+                    before entering is not included.
+                  </td>
+                </tr>
+                <tr>
+                  <td colSpan="5">
+                    U.S. currency is the official currency since 2000 of Ecuador
+                    and the Galapagos Islands.
                   </td>
                 </tr>
                 <tr>
