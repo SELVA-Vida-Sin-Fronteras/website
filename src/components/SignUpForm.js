@@ -1,62 +1,66 @@
-import { useState } from "react";
-const SignUpForm = () => {
-  const [invalid, setInvalid] = useState(false);
+import React from "react";
+import { Form, Button } from "semantic-ui-react";
+import { useForm } from "react-hook-form";
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    setInvalid(true);
-  };
-
-  let inputClass = "form-control"
-  if (invalid) {
-    inputClass += " is-invalid"
-  }
-
+export default function SignUpForm() {
   return (
-    <form
-      data-testid="signup-form"
-      className="card bg-light text-dark"
-      onSubmit={handleSubmit}
-    >
+    <div className="card bg-light text-dark">
       <h2 className="card-header text-center fs-1">Start Your Journey</h2>
-      <div className="card-body">
-        <label htmlFor="firstName" className="form-label">First Name</label>
-        <input id="firstName" label="First Name" className={inputClass} />
-        <label htmlFor="lastName" className="form-label">Last Name</label>
-        <input id="lastName" label="Last Name"  className={inputClass}  />
-        <label htmlFor="email" className="form-label">E-mail</label>
-        <input id="email" label="E-mail"  className={inputClass}  />
-        <label htmlFor="phone" className="form-label">Phone</label>
-        <input id="phone" label="Phone"  className={inputClass}  />
-        <label htmlFor="tripOption" className="form-label">
-          Trip Option
-        </label>
-        <select
-          id="tripOption"
-          className={"form-select " + inputClass}
-          
-        >
-          <option defaultValue>Select your journey</option>
-          <option value="1">10 Day / 9Night: $3,442</option>
-          <option value="2">Rainforest Only (5 days/4 nights): $1,765</option>
-          <option value="3">10 day with Galapagos add on: $5,285</option>
-          <option value="3">Rainforest only day with Galapagos add on: $3,608</option>
-
-        </select>
-        <label htmlFor="comments" className="form-label">
-          Comments
-        </label>
-        <textarea
-          id="comments"
-          className="form-control"
-          type="textarea"
-          style={{ resize: "none", height: "6rem" }}
-        />
-
+      <Form data-testid="signup-form" className="card-body">
+        <Form.Field>
+          <label htmlFor="firstName" className="form-label">
+            First Name
+          </label>
+          <input
+            id="firstName"
+            className="form-control"
+            placeholder="Please enter your first name"
+          ></input>
+        </Form.Field>
+        <Form.Field>
+          <label htmlFor="lastName" className="form-label">
+            Last Name
+          </label>
+          <input
+            id="lastName"
+            className="form-control"
+            placeholder="Please enter your last name"
+          ></input>
+        </Form.Field>
+        <Form.Field>
+          <label htmlFor="email" className="form-label">
+            Email
+          </label>
+          <input
+            id="email"
+            className="form-control"
+            type="email"
+            placeholder="email@.example.com"
+          ></input>
+        </Form.Field>
+        <Form.Field>
+          <label htmlFor="phone" className="form-label">
+            Phone Number
+          </label>
+          <input
+            id="phone"
+            className="form-control"
+            type="tel"
+            placeholder="123-456-7890"
+          ></input>
+        </Form.Field>
+        <Form.Field>
+          <label htmlFor="trip-option" className="form-label">
+            Trip Option
+          </label>
+          <input
+            id="trip-option"
+            className="form-control"
+            placeholder="Which trip option are you interested in?"
+          ></input>
+        </Form.Field>
         <button className="btn btn-primary btn-lg my-4">Sign Up</button>
-      </div>
-    </form>
+      </Form>
+    </div>
   );
-};
-
-export default SignUpForm;
+}
