@@ -69,10 +69,16 @@ describe("Sign Up Form", () => {
             expect(input.classList).toContain("is-invalid");
           }
         );
-
+        
         it("should disable the button when the name field is empty", () => {
           userEvent.click(button);
           expect(button).toBeDisabled();
+        });
+        it("when the user enters a name the field should no longer display an error state", () => {
+          userEvent.click(button);
+          const input = screen.getByLabelText("First Name");
+          userEvent.type(input, "Jane");
+          expect(input.classList).not.toContain("is-invalid");
         });
       });
     });

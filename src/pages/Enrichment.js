@@ -256,7 +256,7 @@ const Enrichment = () => {
                   <td colSpan="5" className="text-center">
                     <ul>
                       <li className="list-group-item fs-3">
-                        Quito and Rainforest trip (10 Day / 9Night): $3,442
+                      Quito and Rainforest trip (10 days/9 nights): $3,442
                       </li>
                       <li className="list-group-item fs-3">
                         Rainforest Only (5 days/4 nights): $1,765

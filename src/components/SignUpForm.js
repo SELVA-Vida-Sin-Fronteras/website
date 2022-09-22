@@ -53,7 +53,7 @@ const SignUpForm = () => {
           style={{ resize: "none", height: "6rem" }}
         />
 
-        <button className="btn btn-primary btn-lg my-4">Sign Up</button>
+        <button className="btn btn-primary btn-lg my-4" disabled={invalid}>Sign Up</button>
       </div>
     </form>
   );
