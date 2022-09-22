@@ -11,31 +11,53 @@ export default function SignUpForm() {
           <label htmlFor="firstName" className="form-label">
             First Name
           </label>
-          <input id="firstName" className="form-control"></input>
+          <input
+            id="firstName"
+            className="form-control"
+            placeholder="Please enter your first name"
+          ></input>
         </Form.Field>
         <Form.Field>
           <label htmlFor="lastName" className="form-label">
             Last Name
           </label>
-          <input id="lastName" className="form-control"></input>
+          <input
+            id="lastName"
+            className="form-control"
+            placeholder="Please enter your last name"
+          ></input>
         </Form.Field>
         <Form.Field>
           <label htmlFor="email" className="form-label">
             Email
           </label>
-          <input id="email" className="form-control" type="email"></input>
+          <input
+            id="email"
+            className="form-control"
+            type="email"
+            placeholder="email@.example.com"
+          ></input>
         </Form.Field>
         <Form.Field>
           <label htmlFor="phone" className="form-label">
             Phone Number
           </label>
-          <input id="phone" className="form-control" type="tel"></input>
+          <input
+            id="phone"
+            className="form-control"
+            type="tel"
+            placeholder="123-456-7890"
+          ></input>
         </Form.Field>
         <Form.Field>
           <label htmlFor="trip-option" className="form-label">
             Trip Option
           </label>
-          <input id="trip-option" className="form-control"></input>
+          <input
+            id="trip-option"
+            className="form-control"
+            placeholder="Which trip option are you interested in?"
+          ></input>
         </Form.Field>
         <button className="btn btn-primary btn-lg my-4">Sign Up</button>
       </Form>
