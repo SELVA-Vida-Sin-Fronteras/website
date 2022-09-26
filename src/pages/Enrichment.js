@@ -38,16 +38,17 @@ const Enrichment = () => {
 
           <SignUpForm />
 
-          <section data-testid="itinerary" className="shedule">
+          <section data-testid="itinerary">
             <h2 className="text-uppercase">
               May 2023 Enrichment Journey Schedule
             </h2>
+
             <table className="table bg-light my-4">
-              <thead>
+              <thead className="table-dark">
                 <tr>
-                  <th>Day</th>
-                  <th>Date</th>
-                  <th>Agenda</th>
+                  <td>Day</td>
+                  <td>Date</td>
+                  <td>Agenda</td>
                 </tr>
               </thead>
               <tbody>
@@ -68,7 +69,7 @@ const Enrichment = () => {
                   <td>Day 3:</td>
                   <td>5/7/23</td>
                   <td>
-                    Leave for Cuenca with a stop at the IngapircaInca Ruins.
+                    Leave for Cuenca with a stop at the Ingapirca Inca Ruins.
                     Stay at Boutique Hotel Santa Lucia
                   </td>
                 </tr>
@@ -91,7 +92,7 @@ const Enrichment = () => {
                   </td>
                 </tr>
                 <tr>
-                  <td>
+                  <td colSpan={3}>
                     <h2 className="text-uppercase">Rainforest</h2>
                   </td>
                 </tr>
@@ -106,6 +107,7 @@ const Enrichment = () => {
                 </tr>
                 <tr>
                   <td>Day 7:</td>
+                  
                   <td>5/11/23</td>
                   <td>
                     Early morning paddle canoe ride on Pañacocha Lake. Learn
@@ -116,9 +118,8 @@ const Enrichment = () => {
                 </tr>
                 <tr>
                   <td>Day 8:</td>
-                  <td>5/12/23</td>
+                  <td>5/12/23 </td>
                   <td>
-                    {" "}
                     Cultural day and visit to the Kichwa community, enjoy local
                     crafts. Learn about the traditional use of blow guns and
                     darts. Travel on Napo River, stop at clay licking wall to
@@ -127,10 +128,9 @@ const Enrichment = () => {
                   </td>
                 </tr>
                 <tr>
-                  <td> Day 9:</td>
+                  <td>Day 9:</td>
                   <td>5/13/23</td>
                   <td>
-                    {" "}
                     4th Optional activities. Lunch and dinner included. Canoe
                     trip to final stop for and night activities and overnight
                     stay at Yarino Lodge
@@ -146,13 +146,13 @@ const Enrichment = () => {
                   </td>
                 </tr>
                 <tr>
-                  <td>
+                  <td colSpan={3}>
                     <h2 className="text-uppercase">Galapagos</h2>
                   </td>
                 </tr>
                 <tr>
                   <td>Day 11:</td>
-                  <td>5/15/23</td>
+                  <td> 5/15/23</td>
                   <td>
                     Fly into the Galapagos from Quito and go by water taxi to
                     San Cristobal Island. Afternoon for Tijeretas or Loberias
@@ -170,21 +170,33 @@ const Enrichment = () => {
                   <td>Hiking and snorkeling around San Cristobal Island</td>
                 </tr>
                 <tr>
-                  <td>Day 14:</td>
-                  <td>5/18/23</td>
+                  <td> Day 14:</td>
+                  <td>5/18/23 </td>
                   <td>Flight back to Quito. Return to USA from Quito</td>
+                </tr>
+                <tr>
+                  <td colSpan={3}>
+                    <h2>
+                      <span className="text-uppercase">Three Options</span>{" "}
+                      (Including hotel accommodations and breakfast):
+                    </h2>
+                  </td>
+                </tr>
+                <tr>
+                  <td colSpan={3}>
+                    <ol>
+                      <li> 10 days/9 nights: $3,442</li>
+                      <li> Rainforest only: (5 days/4 nights): $1,765</li>
+                      <li>
+                        14 day journey with the Galapagos extension: $5,285
+                      </li>
+                    </ol>
+                    $20.00 tourism fee and $100.00 entrance fee to the Galapagos
+                    Islands not included.
+                  </td>
                 </tr>
               </tbody>
             </table>
-            <h2>
-              THREE OPTIONS (Including hotel accommodations and breakfast):
-            </h2>
-            <ol className="list-group">
-              <li className="list-group-item">10 days/9 nights: $3,442</li>
-              <li className="list-group-item">Rainforest only: (5 days/4 nights): $1,765</li>
-              <li className="list-group-item">Galapagos trip: $1,843</li>
-            </ol>
-            Total cost: (With the Galapagos trip) $5,285
           </section>
         </section>
       </div>
