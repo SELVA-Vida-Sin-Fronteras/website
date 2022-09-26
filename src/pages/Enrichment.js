@@ -46,9 +46,9 @@ const Enrichment = () => {
             <table className="table bg-light my-4">
               <thead className="table-dark">
                 <tr>
-                  <td>Day</td>
-                  <td>Date</td>
-                  <td>Agenda</td>
+                  <th>Day</th>
+                  <th>Date</th>
+                  <th>Agenda</th>
                 </tr>
               </thead>
               <tbody>
