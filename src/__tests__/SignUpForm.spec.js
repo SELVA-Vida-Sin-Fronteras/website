@@ -46,4 +46,22 @@ describe("Signup Form", () => {
       expect(button).toBeInTheDocument();
     });
   });
+  describe("Interactions", () => {
+    describe("when the form is submitted with an empty field", () => {
+      it.each`
+        name             | inputField
+        ${"first name"}  | ${"First Name"}
+        ${"last name"}   | ${"Last Name"}
+        ${"email"}       | ${"Email"}
+        ${"phone"}       | ${"Phone Number"}
+        ${"trip option"} | ${"Trip Option"}
+      `("should display an error state for $name", ({ inputField }) => {
+        const input = screen.getByLabelText(inputField);
+        expect(input.classList.contains("is-invalid")).toBeFalsy();
+        userEvent.click(button);
+
+        expect(input.classList.contains("is-invalid")).toBeTruthy();
+      });
+    });
+  });
 });
