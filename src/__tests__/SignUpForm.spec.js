@@ -62,6 +62,10 @@ describe("Signup Form", () => {
 
         expect(input.classList.contains("is-invalid")).toBeTruthy();
       });
+      it("should disable the signup button", () => {
+        userEvent.click(button);
+        expect(button).toBeDisabled();
+      });
     });
   });
 });
