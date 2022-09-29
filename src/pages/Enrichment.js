@@ -36,7 +36,7 @@ const Enrichment = () => {
             </p>
           </section>
 
-          <SignUpForm />
+          {/* <SignUpForm /> */}
 
           <section data-testid="itinerary">
             <h2 className="text-uppercase">
@@ -197,6 +197,8 @@ const Enrichment = () => {
                 </tr>
               </tbody>
             </table>
+            <h2>To Start Your Journey...</h2>
+            <a href="mailto:Fsvsfusa@gmail.com " className="btn btn-primary btn-lg">Contact Us</a>
           </section>
         </section>
       </div>
