@@ -10,23 +10,23 @@
   }
 
   &--home {
-    background-image: url("../assets/img/home-page-bg.jpg");
+    background-image: url('../../assets/img/home-page-bg.jpg');
     @include media-sm {
-      background-image: url("../assets/img/home-page-bg-sm.jpg");
+      background-image: url("../../assets/img/home-page-bg-sm.jpg");
     }
     @include media-md {
-      background-image: url("../assets/img/home-page-bg-lg.jpg");
+      background-image: url("../../assets/img/home-page-bg-lg.jpg");
     }
   }
   &--who-we-are {
-    background-image: url("../assets/img/who-we-are.jpg");
+    background-image: url("../../assets/img/who-we-are.jpg");
 
     @include media-sm {
-      background-image: url("../assets/img/who-we-are-lg.jpg");
+      background-image: url("../../assets/img/who-we-are-lg.jpg");
     }
   }
 
   &--journey {
-    background-image: url("../assets/img/journey.jpg");
+    background-image: url("../../assets/img/journey.jpg");
   }
 }
