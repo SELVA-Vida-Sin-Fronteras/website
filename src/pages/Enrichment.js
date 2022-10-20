@@ -197,7 +197,7 @@ const Enrichment = () => {
                 </tr>
               </tbody>
             </table>
-            <h2>To Start Your Journey...</h2>
+            <h2>For more information and to sign up please...</h2>
             <a href="mailto:Fsvsfusa@gmail.com " className="btn btn-primary btn-lg">Contact Us</a>
           </section>
         </section>

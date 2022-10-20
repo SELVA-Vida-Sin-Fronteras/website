@@ -20,8 +20,6 @@ describe("Enrichment Journey Page", () => {
       const itinerary = screen.getByTestId("itinerary");
       expect(itinerary).toBeInTheDocument();
     });
-    it("should have a sign up form", () => {
-      const form = screen.getByTestId("signup-form");
-    });
+    
   });
 });
