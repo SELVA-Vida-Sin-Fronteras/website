@@ -1,6 +1,5 @@
-import donate from '../assets/img/donate.jpg'
-import mariana from '../assets/img/mariana.jpg'
-
+import donate from "../assets/img/donate.jpg";
+import mariana from "../assets/img/mariana.jpg";
 
 const TakeAction = () => {
   return (
@@ -9,7 +8,11 @@ const TakeAction = () => {
       <section className="card p-4 mx-auto my-5" style={{ maxWidth: "40rem" }}>
         <h2 className="card-title text-center my-3">Donate</h2>
         <div className="card-body">
-          <img className='img-fluid mb-3' src={donate} alt="An elderly man holding a staff"/>
+          <img
+            className="img-fluid mb-3"
+            src={donate}
+            alt="An elderly man holding a staff"
+          />
           <p>
             Become a monthly sustainer. Your donation goes directly to support
             the work of the Amazon Reserve for Peace .
@@ -23,8 +26,12 @@ const TakeAction = () => {
         </div>
         <p className="card-footer">Our U.S. tax ID number is: 83-0767820</p>
       </section>
-      <img className="img-fluid" src={mariana} alt="Mariana clinic"/>
-
+      <p>
+        In honor and support of Mariana Almeida, Founder of Selva Vida Sin
+        Fronteras, The Amazon Reserve for Peace and the Indigenous People of the
+        Amazon Rainforest of Ecuador{" "}
+      </p>
+      <img className="img-fluid" src={mariana} alt="Mariana clinic" />
     </div>
   );
 };
