@@ -1,5 +1,5 @@
 import donate from "../assets/img/donate.jpg";
-import mariana from "../assets/img/mariana.jpg";
+import video from "../assets/mp4/amazon-reserve-for-peace.mp4"
 
 const TakeAction = () => {
   return (
@@ -31,6 +31,12 @@ const TakeAction = () => {
         Fronteras, The Amazon Reserve for Peace and the Indigenous People of the
         Amazon Rainforest of Ecuador{" "}
       </p>
+      <video className="img-fluid" controls >
+        <source src={video} type="video/mp4"/>
+        
+        Your browser does not support the video tag.
+      </video>
+
     </div>
   );
 };
