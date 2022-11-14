@@ -31,7 +31,6 @@ const TakeAction = () => {
         Fronteras, The Amazon Reserve for Peace and the Indigenous People of the
         Amazon Rainforest of Ecuador{" "}
       </p>
-      <img className="img-fluid" src={mariana} alt="Mariana clinic" />
     </div>
   );
 };
