@@ -1,3 +1,5 @@
+// TODO: refactor to allow CRUD 
+
 import nov2221 from "../assets/img/nov-22-21.jpg";
 import nov1521 from "../assets/img/nov-15-21.jpg";
 import nov0221 from "../assets/img/nov-2-21.jpg";
@@ -6,6 +8,8 @@ import oct2621 from "../assets/img/oct-26-21.jpg";
 import may0521 from "../assets/img/may-5-21.jpg";
 
 const Blog = () => {
+  //FIXME: fix layout on small screens
+  //FIXME: extract blog data
   return (
     <div data-testid="blog" className="p-5 page">
       <h1 className="text-center mb-5">Friends of SELVA Blog</h1>
@@ -71,6 +75,7 @@ const Blog = () => {
           Artist talk by Char Norman and Helen Hoffelt about their exhibition
           Frayed: A World in Peril at Ohio Dominican University Wehrle Gallery
         </p>
+        // FIXME: seperate window on small screen
         <iframe
           width="560"
           height="315"

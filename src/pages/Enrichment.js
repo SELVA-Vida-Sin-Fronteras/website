@@ -1,6 +1,6 @@
-import SignUpForm from "../components/SignUpForm";
 const Enrichment = () => {
   return (
+    // FIXME: clean up this code 
     <div
       data-testid="enrichment"
       className=" justify-content-center page enrichment"
@@ -36,7 +36,13 @@ const Enrichment = () => {
             </p>
           </section>
 
-          {/* <SignUpForm /> */}
+          {/* 
+          TODO: create sign up form
+          */}
+
+          //FIXME: extract itinerary
+          
+          //FIXME: fix display on small screen
 
           <section data-testid="itinerary">
             <h2 className="text-uppercase">
@@ -54,12 +60,12 @@ const Enrichment = () => {
               <tbody>
                 <tr>
                   <td>Day 1:</td>
-                  <td>5/5/23</td>
+                  <td>5/17/24</td>
                   <td>Arrive in Quito, transfer to Airport Holiday Inn</td>
                 </tr>
                 <tr>
                   <td>Day 2:</td>
-                  <td>5/6/23</td>
+                  <td>5/18/24</td>
                   <td>
                     Travel by van to Riobamba for a stay at La Andaluza Hacienda
                     and visit to Quilotoa Crater Lake.
@@ -67,7 +73,7 @@ const Enrichment = () => {
                 </tr>
                 <tr>
                   <td>Day 3:</td>
-                  <td>5/7/23</td>
+                  <td>5/19/24</td>
                   <td>
                     Leave for Cuenca with a stop at the Ingapirca Inca Ruins.
                     Stay at Boutique Hotel Santa Lucia
@@ -75,7 +81,7 @@ const Enrichment = () => {
                 </tr>
                 <tr>
                   <td>Day 4:</td>
-                  <td>5/8/23</td>
+                  <td>5/20/24</td>
                   <td>
                     Visit the Panama Hat Factory. Visit a 3rd generation weaver
                     who works with natural dyes, fibers and a backstrap loom to
@@ -85,7 +91,7 @@ const Enrichment = () => {
                 </tr>
                 <tr>
                   <td>Day 5:</td>
-                  <td>5/9/23</td>
+                  <td>5/21/24</td>
                   <td>
                     Breakfast, flight to Quito, city tour, archeological museum
                     with lunch, stay at Hotel Mercure Alamende
@@ -98,7 +104,7 @@ const Enrichment = () => {
                 </tr>
                 <tr>
                   <td>Day 6:</td>
-                  <td>5/10/23</td>
+                  <td>5/22/24</td>
                   <td>
                     Breakfast. Return to Quito airport/flight to the village of
                     Coca. Van to Amazon Dolphin Reserve. Night Hike. Dinner
@@ -107,8 +113,8 @@ const Enrichment = () => {
                 </tr>
                 <tr>
                   <td>Day 7:</td>
-                  
-                  <td>5/11/23</td>
+
+                  <td>5/23/24</td>
                   <td>
                     Early morning paddle canoe ride on Pañacocha Lake. Learn
                     about medicinal plants and watch for wildlife. Lunch in the
@@ -118,7 +124,7 @@ const Enrichment = () => {
                 </tr>
                 <tr>
                   <td>Day 8:</td>
-                  <td>5/12/23 </td>
+                  <td>5/24/24 </td>
                   <td>
                     Cultural day and visit to the Kichwa community, enjoy local
                     crafts. Learn about the traditional use of blow guns and
@@ -129,7 +135,7 @@ const Enrichment = () => {
                 </tr>
                 <tr>
                   <td>Day 9:</td>
-                  <td>5/13/23</td>
+                  <td>5/25/24</td>
                   <td>
                     4th Optional activities. Lunch and dinner included. Canoe
                     trip to final stop for and night activities and overnight
@@ -138,7 +144,7 @@ const Enrichment = () => {
                 </tr>
                 <tr>
                   <td>Day 10:</td>
-                  <td>5/14/23</td>
+                  <td>5/26/24</td>
                   <td>
                     Morning canoe back to Coca for a morning flight back to
                     Quito in preparation to fly home or stay one night to attend
@@ -152,7 +158,7 @@ const Enrichment = () => {
                 </tr>
                 <tr>
                   <td>Day 11:</td>
-                  <td> 5/15/23</td>
+                  <td> 5/27/24</td>
                   <td>
                     Fly into the Galapagos from Quito and go by water taxi to
                     San Cristobal Island. Afternoon for Tijeretas or Loberias
@@ -161,17 +167,17 @@ const Enrichment = () => {
                 </tr>
                 <tr>
                   <td>Day 12:</td>
-                  <td>5/16/23</td>
+                  <td>5/28/24</td>
                   <td>360-degree tour around San Cristobal</td>
                 </tr>
                 <tr>
                   <td>Day 13:</td>
-                  <td>5/17/23</td>
+                  <td>5/29/24</td>
                   <td>Hiking and snorkeling around San Cristobal Island</td>
                 </tr>
                 <tr>
                   <td> Day 14:</td>
-                  <td>5/18/23 </td>
+                  <td>5/30/24 </td>
                   <td>Flight back to Quito. Return to USA from Quito</td>
                 </tr>
                 <tr>
@@ -198,7 +204,12 @@ const Enrichment = () => {
               </tbody>
             </table>
             <h2>For more information and to sign up please...</h2>
-            <a href="mailto:Fsvsfusa@gmail.com " className="btn btn-primary btn-lg">Contact Us</a>
+            <a
+              href="mailto:Fsvsfusa@gmail.com "
+              className="btn btn-primary btn-lg"
+            >
+              Contact Us
+            </a>
           </section>
         </section>
       </div>
