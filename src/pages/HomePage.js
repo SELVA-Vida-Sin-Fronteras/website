@@ -4,10 +4,9 @@ import blogImage from "../assets/img/home-blog.jpg";
 import actionImage from "../assets/img/home-take-action.jpg";
 
 const HomePage = () => {
-  // FIXME: fix divities
-  //BUG: Ling should contain the entire element
+  // FIXME: fix divs
   return (
-    <div data-testid="home-page" className="home-page page">
+    <main data-testid="home-page" className="home-page page">
       <div className="img-container-hero img-container-hero--home d-flex">
         <section
           className="card card__hero text-light p-2 m-auto shadow-lg "
@@ -28,12 +27,9 @@ const HomePage = () => {
           </div>
         </section>
       </div>
-      <div className="p-5">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg">
+        <div className="container row">       
               <section
-                className="card p-2 m-auto mt-5 shadow-lg "
+                className="card p-2 m-auto mt-5 shadow-lg col-lg"
                 data-testid="home-enrichment"
               >
                 <h2 className="card-title text-center fs-3">
@@ -52,10 +48,8 @@ const HomePage = () => {
                   </Link>
                 </div>
               </section>
-            </div>
-            <div className="col-lg">
               <section
-                className="card p-2 m-auto mt-5 shadow-lg "
+                className="card p-2 m-auto mt-5 shadow-lg col-lg"
                 data-testid="home-blog"
               >
                 <h2 className="card-title text-center fs-3">Blog</h2>
@@ -68,11 +62,8 @@ const HomePage = () => {
                   </Link>
                 </div>
               </section>
-            </div>
-
-            <div className="col-lg">
               <section
-                className="card p-2 m-auto mt-5 shadow-lg "
+                className="card p-2 m-auto mt-5 shadow-lg col-lg"
                 data-testid="home-take-action"
               >
                 <h2 className="card-title text-center fs-3">Take Action</h2>
@@ -86,10 +77,7 @@ const HomePage = () => {
                 </div>
               </section>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </main>
   );
 };
 
