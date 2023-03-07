@@ -8,6 +8,7 @@ import TakeAction from "./pages/TakeAction";
 import Error from "./pages/Error";
 
 const App = () => {
+  // TODO: refator to express router 
   return (
     <BrowserRouter>
       <Routes>

@@ -1,4 +1,5 @@
 const WhoWeAre = () => {
+  // TODO: fix divs 
   return (
     <div data-testid="who-we-are" className="page who-we-are">
       <div className="img-container img-container-hero img-container-hero--who-we-are mb-5"></div>

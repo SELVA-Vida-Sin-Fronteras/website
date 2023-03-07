@@ -3,6 +3,7 @@ import video from "../assets/mp4/amazon-reserve-for-peace.mp4"
 
 const TakeAction = () => {
   return (
+    // TODO: fix divs 
     <div data-testid="take-action" className="page p-5">
       <h1 className="text-center">Take Action</h1>
       <section className="card p-4 mx-auto my-5" style={{ maxWidth: "40rem" }}>

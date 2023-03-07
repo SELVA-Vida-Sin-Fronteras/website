@@ -1,3 +1,5 @@
+// TODO: refactor to allow CRUD 
+
 import nov2221 from "../assets/img/nov-22-21.jpg";
 import nov1521 from "../assets/img/nov-15-21.jpg";
 import nov0221 from "../assets/img/nov-2-21.jpg";

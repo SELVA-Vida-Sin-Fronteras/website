@@ -1,6 +1,6 @@
-import SignUpForm from "../components/SignUpForm";
 const Enrichment = () => {
   return (
+    // TODO: clean up this code 
     <div
       data-testid="enrichment"
       className=" justify-content-center page enrichment"
@@ -36,7 +36,9 @@ const Enrichment = () => {
             </p>
           </section>
 
-          {/* <SignUpForm /> */}
+          {/* 
+          TODO: create sign up form
+          */}
 
           <section data-testid="itinerary">
             <h2 className="text-uppercase">
@@ -107,7 +109,7 @@ const Enrichment = () => {
                 </tr>
                 <tr>
                   <td>Day 7:</td>
-                  
+
                   <td>5/23/24</td>
                   <td>
                     Early morning paddle canoe ride on Pañacocha Lake. Learn
@@ -198,7 +200,12 @@ const Enrichment = () => {
               </tbody>
             </table>
             <h2>For more information and to sign up please...</h2>
-            <a href="mailto:Fsvsfusa@gmail.com " className="btn btn-primary btn-lg">Contact Us</a>
+            <a
+              href="mailto:Fsvsfusa@gmail.com "
+              className="btn btn-primary btn-lg"
+            >
+              Contact Us
+            </a>
           </section>
         </section>
       </div>

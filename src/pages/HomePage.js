@@ -4,6 +4,7 @@ import blogImage from "../assets/img/home-blog.jpg";
 import actionImage from "../assets/img/home-take-action.jpg";
 
 const HomePage = () => {
+  // TODO: fix divities 
   return (
     <div data-testid="home-page" className="home-page page">
       <div className="img-container-hero img-container-hero--home d-flex">
