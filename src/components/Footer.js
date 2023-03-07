@@ -1,5 +1,6 @@
 const Footer = () => {
   return (
+    // FIXME: fix display on large screens
     <footer className="footer p-5 navbar-fixed-bottom" data-testid="footer">
       <nav className="navbar navbar-expand justify-content-center">
         <ul className="navbar-nav ">
@@ -9,7 +10,7 @@ const Footer = () => {
               href="https://www.facebook.com/friendsofselvausa.org"
               aria-label="Facebook"
             >
-              {/* TODO: fix svg import */}
+              // FIXME: fix svg import
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
@@ -28,8 +29,7 @@ const Footer = () => {
               aria-label="Instagram"
               className="nav-link"
             >
-              {/* TODO: fix svg import */}
-
+              // FIXME: fix svg import
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
@@ -47,8 +47,7 @@ const Footer = () => {
               aria-label="LinkedIn"
               className="nav-link"
             >
-              {/* TODO: fix svg import */}
-
+              // FIXME: fix svg import
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
@@ -61,15 +60,14 @@ const Footer = () => {
             </a>
           </li>
           <li className="nav-item">
-              {/* TODO: create mail function */}
+            {/* TODO: create mail function */}
 
             <a
               href="mailto:fsvsfusa@gmail.com"
               aria-label="email"
               className="nav-link"
             >
-              {/* TODO: fix svg import */}
-
+              // FIXME: fix svg import
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"

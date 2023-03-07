@@ -1,9 +1,9 @@
 import donate from "../assets/img/donate.jpg";
-import video from "../assets/mp4/amazon-reserve-for-peace.mp4"
+import video from "../assets/mp4/amazon-reserve-for-peace.mp4";
 
 const TakeAction = () => {
   return (
-    // TODO: fix divs 
+    //  FIXME: fix divs
     <div data-testid="take-action" className="page p-5">
       <h1 className="text-center">Take Action</h1>
       <section className="card p-4 mx-auto my-5" style={{ maxWidth: "40rem" }}>
@@ -32,12 +32,11 @@ const TakeAction = () => {
         Fronteras, The Amazon Reserve for Peace and the Indigenous People of the
         Amazon Rainforest of Ecuador{" "}
       </p>
-      <video className="img-fluid" controls >
-        <source src={video} type="video/mp4"/>
-        
+      //FIXME: center video
+      <video className="img-fluid" controls>
+        <source src={video} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-
     </div>
   );
 };

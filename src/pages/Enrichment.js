@@ -1,6 +1,6 @@
 const Enrichment = () => {
   return (
-    // TODO: clean up this code 
+    // FIXME: clean up this code 
     <div
       data-testid="enrichment"
       className=" justify-content-center page enrichment"
@@ -39,6 +39,10 @@ const Enrichment = () => {
           {/* 
           TODO: create sign up form
           */}
+
+          //FIXME: extract itinerary
+          
+          //FIXME: fix display on small screen
 
           <section data-testid="itinerary">
             <h2 className="text-uppercase">

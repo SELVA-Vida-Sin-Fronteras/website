@@ -2,6 +2,11 @@ import { Link } from "react-router-dom";
 import logo from "../assets/img/logo.png";
 
 const Navbar = () => {
+  //FIXME: fix layout on small screens
+  //FIXME: remove unecessary divs
+  //FIXME: Nav menu should close on link selected
+  //FIXME: nav menu should close on mouse out
+  //FIXME: nave menue should close on scroll
   return (
     <>
       <nav
